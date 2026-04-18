@@ -1,5 +1,8 @@
 package io.github.thebusybiscuit.chestterminal.items;
 
+import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
+
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -26,10 +29,23 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 
+/**
+ * The Access Terminal allows players to browse and interact with items
+ * stored in the Cargo network on the ChestTerminal channel.
+ *
+ * @author TheBusyBiscuit
+ */
 public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
 
-    private final int[] terminalSlots = { 0, 1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42 };
+    private final int[] terminalSlots = {
+        0, 1, 2, 3, 4, 5, 6,
+        9, 10, 11, 12, 13, 14, 15,
+        18, 19, 20, 21, 22, 23, 24,
+        27, 28, 29, 30, 31, 32, 33,
+        36, 37, 38, 39, 40, 41, 42
+    };
 
+    @ParametersAreNonnullByDefault
     public AccessTerminal(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
 
@@ -41,7 +57,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
             }
 
             @Override
-            public void newInstance(BlockMenu menu, Block b) {
+            public void newInstance(@Nonnull BlockMenu menu, @Nonnull Block b) {
                 menu.replaceExistingItem(46, CustomItemStack.create(SlimefunUtils.getCustomHead("f2599bd986659b8ce2c4988525c94e19ddd39fad08a38284a197f1b70675acc"), "\u00a77\u21E6 Previous Page", "", "\u00a7c(This may take up to a Second to update)"));
                 menu.addMenuClickHandler(46, (p, slot, item, action) -> {
                     int page = getPage(b) - 1;
@@ -61,18 +77,19 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
                 });
             }
 
-            private int getPage(Block b) {
+            private int getPage(@Nonnull Block b) {
                 String page = BlockStorage.getLocationInfo(b.getLocation(), "page");
                 return page == null ? 1 : Integer.parseInt(page);
             }
 
             @Override
-            public boolean canOpen(Block b, Player p) {
+            public boolean canOpen(@Nonnull Block b, @Nonnull Player p) {
                 return Slimefun.getProtectionManager().hasPermission(p, b.getLocation(), Interaction.INTERACT_BLOCK);
             }
 
+            @Nonnull
             @Override
-            public int[] getSlotsAccessedByItemTransport(ItemTransportFlow flow) {
+            public int[] getSlotsAccessedByItemTransport(@Nonnull ItemTransportFlow flow) {
                 return new int[0];
             }
         };
@@ -82,19 +99,23 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
         addItemHandler(new BlockPlaceHandler(true) {
 
             @Override
-            public void onPlayerPlace(BlockPlaceEvent e) {
+            public void onPlayerPlace(@Nonnull BlockPlaceEvent e) {
                 BlockStorage.addBlockInfo(e.getBlock(), "page", "1");
             }
 
             @Override
-            public void onBlockPlacerPlace(BlockPlacerPlaceEvent e) {
+            public void onBlockPlacerPlace(@Nonnull BlockPlacerPlaceEvent e) {
                 BlockStorage.addBlockInfo(e.getBlock(), "page", "1");
             }
-
         });
     }
 
-    protected void constructMenu(BlockMenuPreset preset) {
+    /**
+     * Constructs the menu layout for the Access Terminal.
+     *
+     * @param preset the {@link BlockMenuPreset} to populate
+     */
+    protected void constructMenu(@Nonnull BlockMenuPreset preset) {
         MenuClickHandler click = (p, slot, item, action) -> false;
 
         preset.addItem(45, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
@@ -118,6 +139,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
         preset.addItem(53, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
     }
 
+    @Nonnull
     @Override
     public BlockTicker getItemHandler() {
         return new BlockTicker() {
@@ -126,7 +148,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
             private final MenuClickHandler click = (p, slot, stack, action) -> false;
 
             @Override
-            public void tick(Block b, SlimefunItem sf, Config data) {
+            public void tick(@Nonnull Block b, @Nonnull SlimefunItem sf, @Nonnull Config data) {
                 if (CargoNet.getNetworkFromLocation(b.getLocation()) == null) {
                     BlockMenu menu = BlockStorage.getInventory(b);
 
@@ -143,5 +165,4 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
             }
         };
     }
-
 }

@@ -2,6 +2,9 @@ package io.github.thebusybiscuit.chestterminal.items;
 
 import java.util.List;
 
+import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
+
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -14,20 +17,34 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.Rechargeable;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.common.ChatColors;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
+/**
+ * The Wireless Terminal allows players to remotely access an Access Terminal
+ * from a distance, consuming energy in the process.
+ *
+ * @author TheBusyBiscuit
+ */
 public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler> implements Rechargeable {
 
+    @ParametersAreNonnullByDefault
     public WirelessTerminal(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 
+    /**
+     * Returns the maximum range of this wireless terminal in blocks.
+     * A value of -1 indicates unlimited range.
+     *
+     * @return the range in blocks, or -1 for unlimited
+     */
     public abstract int getRange();
 
+    @Nonnull
     @Override
     public ItemUseHandler getItemHandler() {
         return e -> {
@@ -36,7 +53,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
             ItemMeta im = stack.getItemMeta();
             List<String> lore = im.getLore();
 
-            if (lore.isEmpty()) {
+            if (lore == null || lore.isEmpty()) {
                 return;
             }
 
@@ -61,7 +78,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
         };
     }
 
-    private void openRemoteTerminal(Player p, ItemStack stack, String loc, int range) {
+    private void openRemoteTerminal(@Nonnull Player p, @Nonnull ItemStack stack, @Nonnull String loc, int range) {
         if (loc.equals(ChatColors.color("&8\u21E8 &7Linked to: &cNowhere"))) {
             p.sendMessage(ChatColors.color("&4Failed &c- This Device has not been linked to a Chest Terminal!"));
             return;
@@ -81,7 +98,6 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
 
         Block block = world.getBlockAt(x, y, z);
 
-        // Support for protection plugins (fixes #45)
         if (!Slimefun.getProtectionManager().hasPermission(p, block.getLocation(), Interaction.INTERACT_BLOCK)) {
             p.sendMessage(ChatColors.color("&4You are not permitted to access this terminal in that area!"));
             return;
@@ -110,5 +126,4 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
         removeItemCharge(stack, 0.5F);
         BlockStorage.getInventory(block).open(p);
     }
-
 }

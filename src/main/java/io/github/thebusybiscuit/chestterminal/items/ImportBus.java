@@ -1,5 +1,8 @@
 package io.github.thebusybiscuit.chestterminal.items;
 
+import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
+
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -10,18 +13,29 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu.MenuClickHandler;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 
+/**
+ * The Import Bus pulls items from the inventory it is attached to
+ * and places them into the CT Network Channel.
+ *
+ * @author TheBusyBiscuit
+ */
 public class ImportBus extends SlimefunItem {
 
-    private static final int[] border = { 0, 1, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 15, 18, 22, 24, 27, 31, 33, 34, 35, 36, 40, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 };
+    private static final int[] BORDER = {
+        0, 1, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 15,
+        18, 22, 24, 27, 31, 33, 34, 35, 36, 40, 42, 43, 44,
+        45, 46, 47, 48, 49, 50, 51, 52, 53
+    };
 
+    @ParametersAreNonnullByDefault
     public ImportBus(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
 
@@ -33,7 +47,7 @@ public class ImportBus extends SlimefunItem {
             }
 
             @Override
-            public void newInstance(BlockMenu menu, Block b) {
+            public void newInstance(@Nonnull BlockMenu menu, @Nonnull Block b) {
                 if (!BlockStorage.hasBlockInfo(b) || BlockStorage.getLocationInfo(b.getLocation(), "filter-type") == null || BlockStorage.getLocationInfo(b.getLocation(), "filter-type").equals("whitelist")) {
                     menu.replaceExistingItem(23, CustomItemStack.create(Material.WHITE_WOOL, "\u00a77Type: \u00a7fWhitelist", "", "\u00a7e> Click to change it to Blacklist"));
                     menu.addMenuClickHandler(23, (p, slot, item, action) -> {
@@ -84,13 +98,14 @@ public class ImportBus extends SlimefunItem {
             }
 
             @Override
-            public boolean canOpen(Block b, Player p) {
+            public boolean canOpen(@Nonnull Block b, @Nonnull Player p) {
                 String owner = BlockStorage.getLocationInfo(b.getLocation(), "owner");
                 return (owner != null && owner.equals(p.getUniqueId().toString())) || p.hasPermission("slimefun.cargo.bypass");
             }
 
+            @Nonnull
             @Override
-            public int[] getSlotsAccessedByItemTransport(ItemTransportFlow flow) {
+            public int[] getSlotsAccessedByItemTransport(@Nonnull ItemTransportFlow flow) {
                 return new int[0];
             }
         };
@@ -100,7 +115,7 @@ public class ImportBus extends SlimefunItem {
         addItemHandler(new BlockPlaceHandler(false) {
 
             @Override
-            public void onPlayerPlace(BlockPlaceEvent e) {
+            public void onPlayerPlace(@Nonnull BlockPlaceEvent e) {
                 Block b = e.getBlock();
                 BlockStorage.addBlockInfo(b, "owner", e.getPlayer().getUniqueId().toString());
                 BlockStorage.addBlockInfo(b, "index", "0");
@@ -111,10 +126,15 @@ public class ImportBus extends SlimefunItem {
         });
     }
 
-    protected void constructMenu(BlockMenuPreset preset) {
+    /**
+     * Constructs the menu layout for the Import Bus.
+     *
+     * @param preset the {@link BlockMenuPreset} to populate
+     */
+    protected void constructMenu(@Nonnull BlockMenuPreset preset) {
         MenuClickHandler click = (p, slot, item, action) -> false;
 
-        for (int i : border) {
+        for (int i : BORDER) {
             preset.addItem(i, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
         }
 
@@ -127,6 +147,12 @@ public class ImportBus extends SlimefunItem {
         preset.addItem(2, CustomItemStack.create(Material.PAPER, "\u00a73Items", "", "\u00a7bPut in all Items you want to", "\u00a7bblacklist/whitelist"), click);
     }
 
+    /**
+     * Returns the inventory slots used for item input.
+     *
+     * @return an array of slot indices
+     */
+    @Nonnull
     public int[] getInputSlots() {
         return new int[] { 19, 20, 21, 28, 29, 30, 37, 38, 39 };
     }
