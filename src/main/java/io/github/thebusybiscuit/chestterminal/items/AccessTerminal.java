@@ -33,7 +33,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
     public AccessTerminal(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
 
-        new BlockMenuPreset(getId(), "&3CT Access Terminal") {
+        new BlockMenuPreset(getId(), "\u00a73CT Access Terminal") {
 
             @Override
             public void init() {
@@ -42,7 +42,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
 
             @Override
             public void newInstance(BlockMenu menu, Block b) {
-                menu.replaceExistingItem(46, new CustomItemStack(SlimefunUtils.getCustomHead("f2599bd986659b8ce2c4988525c94e19ddd39fad08a38284a197f1b70675acc"), "&7\u21E6 Previous Page", "", "&c(This may take up to a Second to update)"));
+                menu.replaceExistingItem(46, CustomItemStack.create(SlimefunUtils.getCustomHead("f2599bd986659b8ce2c4988525c94e19ddd39fad08a38284a197f1b70675acc"), "\u00a77\u21E6 Previous Page", "", "\u00a7c(This may take up to a Second to update)"));
                 menu.addMenuClickHandler(46, (p, slot, item, action) -> {
                     int page = getPage(b) - 1;
                     if (page > 0) {
@@ -52,7 +52,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
                     return false;
                 });
 
-                menu.replaceExistingItem(50, new CustomItemStack(SlimefunUtils.getCustomHead("c2f910c47da042e4aa28af6cc81cf48ac6caf37dab35f88db993accb9dfe516"), "&7Next Page \u21E8", "", "&c(This may take up to a Second to update)"));
+                menu.replaceExistingItem(50, CustomItemStack.create(SlimefunUtils.getCustomHead("c2f910c47da042e4aa28af6cc81cf48ac6caf37dab35f88db993accb9dfe516"), "\u00a77Next Page \u21E8", "", "\u00a7c(This may take up to a Second to update)"));
                 menu.addMenuClickHandler(50, (p, slot, item, action) -> {
                     int page = getPage(b) + 1;
                     BlockStorage.addBlockInfo(b, "page", String.valueOf(page));
@@ -97,32 +97,32 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
     protected void constructMenu(BlockMenuPreset preset) {
         MenuClickHandler click = (p, slot, item, action) -> false;
 
-        preset.addItem(45, new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(46, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "This will update shortly"));
-        preset.addItem(47, new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(48, new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(49, new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(50, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "This will update shortly"));
-        preset.addItem(51, new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(45, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(46, CustomItemStack.create(Material.RED_STAINED_GLASS_PANE, "This will update shortly"));
+        preset.addItem(47, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(48, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(49, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(50, CustomItemStack.create(Material.RED_STAINED_GLASS_PANE, "This will update shortly"));
+        preset.addItem(51, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
 
-        preset.addItem(7, new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(8, new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(16, new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(25, new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(26, new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(7, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(8, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(16, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(25, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(26, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
 
-        preset.addItem(34, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(35, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(43, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(52, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(53, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(34, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(35, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(43, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(52, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(53, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
     }
 
     @Override
     public BlockTicker getItemHandler() {
         return new BlockTicker() {
 
-            private final ItemStack item = new CustomItemStack(Material.BARRIER, "&4No Cargo Net connected!");
+            private final ItemStack item = CustomItemStack.create(Material.BARRIER, "\u00a74No Cargo Net connected!");
             private final MenuClickHandler click = (p, slot, stack, action) -> false;
 
             @Override

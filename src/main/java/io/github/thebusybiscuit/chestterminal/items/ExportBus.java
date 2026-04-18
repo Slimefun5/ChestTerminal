@@ -24,7 +24,7 @@ public class ExportBus extends SlimefunItem {
     public ExportBus(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
 
-        new BlockMenuPreset(getId(), "&3CT Export Bus") {
+        new BlockMenuPreset(getId(), "\u00a73CT Export Bus") {
 
             @Override
             public void init() {
@@ -63,16 +63,16 @@ public class ExportBus extends SlimefunItem {
         MenuClickHandler click = (p, slot, item, action) -> false;
 
         for (int i : border) {
-            preset.addItem(i, new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+            preset.addItem(i, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
         }
 
-        preset.addItem(7, new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(8, new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(16, new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(25, new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(26, new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(7, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(8, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(16, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(25, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(26, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
 
-        preset.addItem(2, new CustomItemStack(Material.PAPER, "&3Items", "", "&bPut in all Items you want to", "&bwhitelist"), click);
+        preset.addItem(2, CustomItemStack.create(Material.PAPER, "\u00a73Items", "", "\u00a7bPut in all Items you want to", "\u00a7bwhitelist"), click);
     }
 
     public int[] getInputSlots() {
