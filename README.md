@@ -1,13 +1,13 @@
 # ChestTerminal
 
-ChestTerminal is a [Slimefun5](https://github.com/Slimefun/Slimefun4) addon that is heavily inspired by the famous mod [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2).
+ChestTerminal is a [Slimefun5](https://github.com/Slimefun5/Slimefun5) addon that is heavily inspired by the famous mod [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2).
 
 It adds a Chest Terminal that you can hook up to a Cargo System to access all your items that are accessible through Cargo Nodes on the CT-Channel.
 
 ## ⚡ Requirements
 
 - Java 21+
-- [Slimefun5](https://github.com/Slimefun/Slimefun4) (v5.0.0+)
+- [Slimefun5](https://github.com/Slimefun5/Slimefun5) (v5.0.0+)
 - Paper/Spigot 1.16+
 
 ## 🔧 Building
@@ -23,7 +23,7 @@ gradlew.bat build    # Windows
 
 ## 📖 Wiki
 
-[Read more on the Slimefun Wiki...](https://github.com/Slimefun/Slimefun4/wiki/ChestTerminal)
+[Read more on the Slimefun Wiki...](https://github.com/Slimefun5/Slimefun5/wiki/ChestTerminal)
 
 ## 💬 Discord
 

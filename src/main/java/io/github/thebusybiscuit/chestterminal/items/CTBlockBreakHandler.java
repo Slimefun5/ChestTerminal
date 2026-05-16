@@ -4,7 +4,7 @@ import javax.annotation.Nonnull;
 
 import org.bukkit.block.Block;
 
-import io.github.thebusybiscuit.slimefun4.implementation.handlers.SimpleBlockBreakHandler;
+import io.github.thebusybiscuit.slimefun5.implementation.handlers.SimpleBlockBreakHandler;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 
@@ -31,3 +31,4 @@ class CTBlockBreakHandler extends SimpleBlockBreakHandler {
         }
     }
 }
+

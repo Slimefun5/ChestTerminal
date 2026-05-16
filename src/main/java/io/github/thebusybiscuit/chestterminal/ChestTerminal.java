@@ -13,13 +13,13 @@ import io.github.thebusybiscuit.chestterminal.items.ExportBus;
 import io.github.thebusybiscuit.chestterminal.items.ImportBus;
 import io.github.thebusybiscuit.chestterminal.items.MilkyQuartz;
 import io.github.thebusybiscuit.chestterminal.items.WirelessTerminal;
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 
 /**
  * ChestTerminal is a Slimefun addon that adds a chest terminal system,
@@ -144,3 +144,4 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
         return "https://github.com/TheBusyBiscuit/ChestTerminal/issues";
     }
 }
+
