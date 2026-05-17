@@ -1,14 +1,41 @@
 # ChestTerminal
 
-ChestTerminal is a [Slimefun5](https://github.com/Slimefun5/Slimefun5) addon that is heavily inspired by the famous mod [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2).
+[![Build Status](https://Slimefun5.github.io/builds/Slimefun5/ChestTerminal/stable/badge.svg)](https://Slimefun5.github.io/builds/Slimefun5/ChestTerminal/stable)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Slimefun5/ChestTerminal/total)
+[![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
+[![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/ChestTerminal?style=social)](https://github.com/Slimefun5/ChestTerminal)
+
+A Slimefun 5 Addon.
+
+## Requirements
+- Java 25
+- Paper 1.16.* - 26.1.*
+- Slimefun 5
+
+## Developer API
+
+You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
+
+In your `build.gradle.kts`:
+
+```kotlin
+plugins {
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
+}
+
+dependencies {
+    "githubCompileOnly"("Slimefun5:ChestTerminal:v1.1.1")
+}
+```
+
+
+ChestTerminal is a [Slimefun5](https://github.com/Slimefun/Slimefun4) addon that is heavily inspired by the famous mod [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2).
 
 It adds a Chest Terminal that you can hook up to a Cargo System to access all your items that are accessible through Cargo Nodes on the CT-Channel.
 
 ## ⚡ Requirements
 
-- Java 21+
-- [Slimefun5](https://github.com/Slimefun5/Slimefun5) (v5.0.0+)
-- Paper/Spigot 1.16+
+- [Slimefun5](https://github.com/Slimefun/Slimefun4) (v5.0.0+)
 
 ## 🔧 Building
 
@@ -23,7 +50,7 @@ gradlew.bat build    # Windows
 
 ## 📖 Wiki
 
-[Read more on the Slimefun Wiki...](https://github.com/Slimefun5/Slimefun5/wiki/ChestTerminal)
+[Read more on the Slimefun Wiki...](https://github.com/Slimefun/Slimefun4/wiki/ChestTerminal)
 
 ## 💬 Discord
 
@@ -31,7 +58,6 @@ You can find Slimefun's community on Discord! Click the badge below to join the 
 
 <p align="center">
   <a href="https://discord.gg/fsD4Bkh">
-    <img src="https://img.shields.io/discord/565557184348422174?color=7289DA&label=Discord&style=for-the-badge" alt="Discord Invite"/>
   </a>
 </p>
 
