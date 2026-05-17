@@ -5,7 +5,7 @@
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/ChestTerminal?style=social)](https://github.com/Slimefun5/ChestTerminal)
 
-A Slimefun 5 Addon.
+A Slimefun addon that adds a chest terminal system for managing item networks.
 
 ## Requirements
 - Java 25
