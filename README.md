@@ -12,8 +12,6 @@ A Slimefun addon that adds a chest terminal system for managing item networks.
 - Paper 1.16.* - 26.1.*
 - Slimefun 5
 
-It adds a Chest Terminal that you can hook up to a Cargo System to access all your items that are accessible through Cargo Nodes on the CT-Channel.
-
 ## ⚡ Requirements
 
 - [Slimefun5](https://github.com/Slimefun/Slimefun4) (v5.0.0+)
