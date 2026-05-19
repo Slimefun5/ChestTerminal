@@ -4,6 +4,7 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Slimefun5/ChestTerminal/total)
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/ChestTerminal?style=social)](https://github.com/Slimefun5/ChestTerminal)
+[![bStats](https://bStats.org/signatures/bukkit/ChestTerminal.svg)](https://bStats.org/plugin/bukkit/ChestTerminal/5503)
 
 A Slimefun addon that adds a chest terminal system for managing item networks.
 
