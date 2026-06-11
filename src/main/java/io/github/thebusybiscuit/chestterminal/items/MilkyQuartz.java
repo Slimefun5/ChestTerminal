@@ -4,7 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import javax.annotation.Nonnull;
 
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.World.Environment;
 import org.bukkit.block.Biome;
 import org.bukkit.inventory.ItemStack;
@@ -24,7 +24,7 @@ public class MilkyQuartz implements GEOResource {
     private final ItemStack item;
 
     public MilkyQuartz(@Nonnull ChestTerminal plugin, @Nonnull ItemStack item) {
-        this.key = new NamespacedKey(plugin, "milky_quartz");
+        this.key = new NamespacedKey("chestterminal", "milky_quartz");
         this.item = item;
     }
 
