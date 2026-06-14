@@ -1,5 +1,6 @@
 package io.github.thebusybiscuit.chestterminal.items;
 
+import java.lang.reflect.Method;
 import java.util.List;
 
 import javax.annotation.Nonnull;
@@ -10,6 +11,7 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -66,7 +68,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
                     p.sendMessage(ChatColors.color("&bLink established!"));
                     im.setLore(lore);
                     stack.setItemMeta(im);
-                    p.getInventory().setItemInMainHand(stack);
+                    setItemInMainHand(p, stack);
                 } else {
                     openRemoteTerminal(p, stack, lore.get(0), getRange());
                 }
@@ -76,6 +78,32 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
                 openRemoteTerminal(e.getPlayer(), stack, lore.get(0), getRange());
             }
         };
+    }
+
+    /**
+     * Sets the item in the player's main hand. Uses {@code setItemInMainHand} on
+     * modern servers and falls back to the legacy {@code setItemInHand} (1.8) when
+     * the modern method is absent.
+     *
+     * @param p     the {@link Player}
+     * @param stack the {@link ItemStack} to place
+     */
+    private void setItemInMainHand(@Nonnull Player p, @Nonnull ItemStack stack) {
+        PlayerInventory inventory = p.getInventory();
+
+        try {
+            Method modern = PlayerInventory.class.getMethod("setItemInMainHand", ItemStack.class);
+            modern.invoke(inventory, stack);
+        } catch (NoSuchMethodException x) {
+            try {
+                Method legacy = PlayerInventory.class.getMethod("setItemInHand", ItemStack.class);
+                legacy.invoke(inventory, stack);
+            } catch (ReflectiveOperationException e) {
+                throw new IllegalStateException("Could not set item in main hand", e);
+            }
+        } catch (ReflectiveOperationException e) {
+            throw new IllegalStateException("Could not set item in main hand", e);
+        }
     }
 
     private void openRemoteTerminal(@Nonnull Player p, @Nonnull ItemStack stack, @Nonnull String loc, int range) {

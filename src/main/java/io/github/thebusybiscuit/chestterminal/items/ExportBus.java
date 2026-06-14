@@ -3,7 +3,6 @@ package io.github.thebusybiscuit.chestterminal.items;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -15,6 +14,7 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.handlers.BlockPlaceHandler;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu.MenuClickHandler;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
@@ -83,16 +83,16 @@ public class ExportBus extends SlimefunItem {
         MenuClickHandler click = (p, slot, item, action) -> false;
 
         for (int i : BORDER) {
-            preset.addItem(i, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+            preset.addItem(i, CustomItemStack.create(XMaterial.CYAN_STAINED_GLASS_PANE.parseMaterial(), " "), click);
         }
 
-        preset.addItem(7, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(8, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(16, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(25, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(26, CustomItemStack.create(Material.BLUE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(7, CustomItemStack.create(XMaterial.BLUE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(8, CustomItemStack.create(XMaterial.BLUE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(16, CustomItemStack.create(XMaterial.BLUE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(25, CustomItemStack.create(XMaterial.BLUE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(26, CustomItemStack.create(XMaterial.BLUE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
 
-        preset.addItem(2, CustomItemStack.create(Material.PAPER, "\u00a73Items", "", "\u00a7bPut in all Items you want to", "\u00a7bwhitelist"), click);
+        preset.addItem(2, CustomItemStack.create(XMaterial.PAPER.parseMaterial(), "\u00a73Items", "", "\u00a7bPut in all Items you want to", "\u00a7bwhitelist"), click);
     }
 
     /**

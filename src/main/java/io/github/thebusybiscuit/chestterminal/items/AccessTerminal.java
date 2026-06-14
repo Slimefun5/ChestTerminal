@@ -3,7 +3,6 @@ package io.github.thebusybiscuit.chestterminal.items;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -20,6 +19,7 @@ import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu.MenuClickHandler;
@@ -118,25 +118,25 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
     protected void constructMenu(@Nonnull BlockMenuPreset preset) {
         MenuClickHandler click = (p, slot, item, action) -> false;
 
-        preset.addItem(45, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(46, CustomItemStack.create(Material.RED_STAINED_GLASS_PANE, "This will update shortly"));
-        preset.addItem(47, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(48, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(49, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(50, CustomItemStack.create(Material.RED_STAINED_GLASS_PANE, "This will update shortly"));
-        preset.addItem(51, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(45, CustomItemStack.create(XMaterial.BLACK_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(46, CustomItemStack.create(XMaterial.RED_STAINED_GLASS_PANE.parseMaterial(), "This will update shortly"));
+        preset.addItem(47, CustomItemStack.create(XMaterial.BLACK_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(48, CustomItemStack.create(XMaterial.BLACK_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(49, CustomItemStack.create(XMaterial.BLACK_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(50, CustomItemStack.create(XMaterial.RED_STAINED_GLASS_PANE.parseMaterial(), "This will update shortly"));
+        preset.addItem(51, CustomItemStack.create(XMaterial.BLACK_STAINED_GLASS_PANE.parseMaterial(), " "), click);
 
-        preset.addItem(7, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(8, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(16, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(25, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(26, CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(7, CustomItemStack.create(XMaterial.CYAN_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(8, CustomItemStack.create(XMaterial.CYAN_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(16, CustomItemStack.create(XMaterial.CYAN_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(25, CustomItemStack.create(XMaterial.CYAN_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(26, CustomItemStack.create(XMaterial.CYAN_STAINED_GLASS_PANE.parseMaterial(), " "), click);
 
-        preset.addItem(34, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(35, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(43, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(52, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
-        preset.addItem(53, CustomItemStack.create(Material.ORANGE_STAINED_GLASS_PANE, " "), click);
+        preset.addItem(34, CustomItemStack.create(XMaterial.ORANGE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(35, CustomItemStack.create(XMaterial.ORANGE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(43, CustomItemStack.create(XMaterial.ORANGE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(52, CustomItemStack.create(XMaterial.ORANGE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
+        preset.addItem(53, CustomItemStack.create(XMaterial.ORANGE_STAINED_GLASS_PANE.parseMaterial(), " "), click);
     }
 
     @Nonnull
@@ -144,7 +144,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
     public BlockTicker getItemHandler() {
         return new BlockTicker() {
 
-            private final ItemStack item = CustomItemStack.create(Material.BARRIER, "\u00a74No Cargo Net connected!");
+            private final ItemStack item = CustomItemStack.create(XMaterial.BARRIER.parseMaterial(), "\u00a74No Cargo Net connected!");
             private final MenuClickHandler click = (p, slot, stack, action) -> false;
 
             @Override
