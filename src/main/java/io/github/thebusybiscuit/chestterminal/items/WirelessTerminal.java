@@ -68,7 +68,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
                     p.sendMessage(ChatColors.color("&bLink established!"));
                     im.setLore(lore);
                     stack.setItemMeta(im);
-                    setItemInMainHand(p, stack);
+                    setItemInHand(p, stack);
                 } else {
                     openRemoteTerminal(p, stack, lore.get(0), getRange());
                 }
@@ -88,7 +88,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
      * @param p     the {@link Player}
      * @param stack the {@link ItemStack} to place
      */
-    private void setItemInMainHand(@Nonnull Player p, @Nonnull ItemStack stack) {
+    private void setItemInHand(@Nonnull Player p, @Nonnull ItemStack stack) {
         PlayerInventory inventory = p.getInventory();
 
         try {
