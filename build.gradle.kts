@@ -49,7 +49,7 @@ tasks {
     jar { enabled = false }
     shadowJar {
         relocate("org.bstats", "chestterminal.libs.bstats")
-        archiveFileName.set("ChestTerminal v${project.version}.jar")
+        archiveFileName.set("ChestTerminal-1.0.0-UNOFFICIAL.jar")
                 exclude("META-INF/**")
     }
     build { dependsOn(shadowJar) }
