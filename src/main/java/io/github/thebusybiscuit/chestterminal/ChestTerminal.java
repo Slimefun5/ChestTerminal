@@ -48,6 +48,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
         SlimefunItemStack wirelessTerminalTransdimensional = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL", MaterialCompat.safe(XMaterial.ITEM_FRAME), "&3CT Wireless Access Terminal &b(Transdimensional)", "&8\u21E8 &7Linked to: &cNowhere", "&8\u21E8 &7Range: &eUnlimited", "&c&o&8\u21E8 &e\u26A1 &70 / 50 J", "", "&7If this Block is linked to an Access Terminal", "&7it will be able to remotely access that Terminal", "", "&7&eRight Click on an Access Terminal &7to link", "&7&eRight Click&7 to open the linked Terminal");
 
         ItemGroup itemGroup = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("chestterminal", "chest_terminal"), CustomItemStack.create(chestTerminal.item(), "&5Chest Terminal", "", "&a> Click to open"));
+        itemGroup.setTheme("logistics");
 
         new SlimefunItem(itemGroup, milkyQuartz, RecipeType.GEO_MINER,
                 new ItemStack[0])
