@@ -20,6 +20,12 @@ import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiText;
+import io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiTopic;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * ChestTerminal is a Slimefun addon that adds a chest terminal system,
@@ -135,6 +141,35 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
 
         // Contribute this addon's per-language item translations (languages/<lang>/items.yml).
         Slimefun.getItemTranslationService().registerTranslations(this);
+
+        // Register this addon's own in-game wiki page (core does not auto-generate addon wikis).
+        registerWiki();
+    }
+
+    private void registerWiki() {
+        WikiText wiki = Slimefun.getWikiText();
+        String topicId = "addon_chestterminal";
+
+        wiki.registerTopic(new WikiTopic(topicId, "ChestTerminal", XMaterial.CHEST, "&7Remote access to your cargo"));
+        wiki.setMechanic(topicId, Arrays.asList(
+            "&7Remote access to your cargo.", "",
+            "&7Access Terminals let you view and", "&7withdraw items from anywhere on a cargo", "&7network; import and export buses move", "&7items in and out automatically.", "",
+            "&7Click an item below for its recipe."));
+
+        // Collect this addon's own items dynamically - never hardcode item lists.
+        List<String> items = new ArrayList<>();
+
+        for (SlimefunItem item : Slimefun.getRegistry().getEnabledSlimefunItems()) {
+            try {
+                if (item.getAddon() == this) {
+                    items.add(item.getId());
+                }
+            } catch (Exception | LinkageError ignored) {
+                // A broken item should not break wiki registration.
+            }
+        }
+
+        wiki.setTopicItems(topicId, items);
     }
 
     @Nonnull
