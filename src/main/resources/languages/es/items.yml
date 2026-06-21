@@ -1,0 +1,34 @@
+# Spanish item translations for ChestTerminal. Keyed by Slimefun item id.
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+MILKY_QUARTZ:
+  name: "&fCuarzo lechoso"
+
+CT_PANEL:
+  name: "&3Panel iluminado CT"
+  lore:
+    - "&7Componente de fabricación"
+
+CHEST_TERMINAL:
+  name: "&3Terminal de acceso CT"
+  lore:
+    - "&7Si este bloque está conectado a una"
+    - "&7red de carga, te permite interactuar de forma"
+    - "&7remota con cualquier objeto suministrado por"
+    - "&7los nodos sintonizados en el canal ChestTerminal"
+
+CT_IMPORT_BUS:
+  name: "&3Bus de importación CT"
+  lore:
+    - "&7Si este bloque está conectado a una"
+    - "&7red de carga, extrae objetos del"
+    - "&7inventario al que está conectado y los coloca"
+    - "&7en el canal de la red CT"
+
+CT_EXPORT_BUS:
+  name: "&3Bus de exportación CT"
+  lore:
+    - "&7Si este bloque está conectado a una"
+    - "&7red de carga, extrae objetos del"
+    - "&7canal de la red CT y los coloca"
+    - "&7en el inventario al que está conectado"
