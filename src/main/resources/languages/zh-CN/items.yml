@@ -1,0 +1,26 @@
+MILKY_QUARTZ:
+  name: "&f乳白石英"
+
+CT_PANEL:
+  name: "&3CT 照明面板"
+
+CHEST_TERMINAL:
+  name: "&3CT 访问终端"
+
+CT_IMPORT_BUS:
+  name: "&3CT 导入总线"
+
+CT_EXPORT_BUS:
+  name: "&3CT 导出总线"
+
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: "&3CT 无线访问终端 &b(16)"
+
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: "&3CT 无线访问终端 &b(64)"
+
+CT_WIRELESS_ACCESS_TERMINAL_128:
+  name: "&3CT 无线访问终端 &b(128)"
+
+CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  name: "&3CT 无线访问终端 &b(跨维度)"

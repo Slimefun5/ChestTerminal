@@ -1,34 +1,26 @@
-# German item translations for ChestTerminal. Keyed by Slimefun item id.
-# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
-
 MILKY_QUARTZ:
   name: "&fMilchiger Quarz"
 
 CT_PANEL:
   name: "&3CT Beleuchtetes Panel"
-  lore:
-    - "&7Handwerkskomponente"
 
 CHEST_TERMINAL:
   name: "&3CT Zugriffsterminal"
-  lore:
-    - "&7Wenn dieser Block mit einem"
-    - "&7Frachtnetzwerk verbunden ist, kannst du aus der Ferne"
-    - "&7mit allen Gegenständen interagieren, die von"
-    - "&7Knoten im ChestTerminal-Kanal bereitgestellt werden"
 
 CT_IMPORT_BUS:
   name: "&3CT Import-Bus"
-  lore:
-    - "&7Wenn dieser Block mit einem"
-    - "&7Frachtnetzwerk verbunden ist, zieht er Gegenstände aus"
-    - "&7dem angeschlossenen Inventar und legt sie"
-    - "&7in den CT-Netzwerkkanal"
 
 CT_EXPORT_BUS:
   name: "&3CT Export-Bus"
-  lore:
-    - "&7Wenn dieser Block mit einem"
-    - "&7Frachtnetzwerk verbunden ist, zieht er Gegenstände aus"
-    - "&7dem CT-Netzwerkkanal und legt diese"
-    - "&7in das angeschlossene Inventar"
+
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: "&3CT Drahtloses Zugriffsterminal &b(16)"
+
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: "&3CT Drahtloses Zugriffsterminal &b(64)"
+
+CT_WIRELESS_ACCESS_TERMINAL_128:
+  name: "&3CT Drahtloses Zugriffsterminal &b(128)"
+
+CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  name: "&3CT Drahtloses Zugriffsterminal &b(Transdimensional)"

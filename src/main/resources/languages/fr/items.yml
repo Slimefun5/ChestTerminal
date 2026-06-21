@@ -1,34 +1,26 @@
-# French item translations for ChestTerminal. Keyed by Slimefun item id.
-# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
-
 MILKY_QUARTZ:
-  name: "&fQuartz laiteux"
+  name: "&fQuartz Laiteux"
 
 CT_PANEL:
-  name: "&3Panneau illuminé CT"
-  lore:
-    - "&7Composant de fabrication"
+  name: "&3Panneau Lumineux CT"
 
 CHEST_TERMINAL:
-  name: "&3Terminal d'accès CT"
-  lore:
-    - "&7Si ce bloc est connecté à un"
-    - "&7réseau de fret, il vous permet d'interagir"
-    - "&7à distance avec tous les objets fournis par"
-    - "&7les nœuds réglés sur le canal ChestTerminal"
+  name: "&3Terminal d'Accès CT"
 
 CT_IMPORT_BUS:
-  name: "&3Bus d'importation CT"
-  lore:
-    - "&7Si ce bloc est connecté à un"
-    - "&7réseau de fret, il extrait les objets de"
-    - "&7l'inventaire auquel il est attaché et les place"
-    - "&7dans le canal du réseau CT"
+  name: "&3Bus d'Importation CT"
 
 CT_EXPORT_BUS:
-  name: "&3Bus d'exportation CT"
-  lore:
-    - "&7Si ce bloc est connecté à un"
-    - "&7réseau de fret, il extrait les objets du"
-    - "&7canal du réseau CT et les place"
-    - "&7dans l'inventaire auquel il est attaché"
+  name: "&3Bus d'Exportation CT"
+
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: "&3Terminal d'Accès Sans Fil CT &b(16)"
+
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: "&3Terminal d'Accès Sans Fil CT &b(64)"
+
+CT_WIRELESS_ACCESS_TERMINAL_128:
+  name: "&3Terminal d'Accès Sans Fil CT &b(128)"
+
+CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  name: "&3Terminal d'Accès Sans Fil CT &b(Transdimensionnel)"

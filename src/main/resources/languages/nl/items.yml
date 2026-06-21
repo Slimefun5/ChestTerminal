@@ -1,0 +1,26 @@
+MILKY_QUARTZ:
+  name: "&fMelkachtig Kwarts"
+
+CT_PANEL:
+  name: "&3CT Verlicht Paneel"
+
+CHEST_TERMINAL:
+  name: "&3CT Toegangsterminal"
+
+CT_IMPORT_BUS:
+  name: "&3CT Importbus"
+
+CT_EXPORT_BUS:
+  name: "&3CT Exportbus"
+
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: "&3CT Draadloze Toegangsterminal &b(16)"
+
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: "&3CT Draadloze Toegangsterminal &b(64)"
+
+CT_WIRELESS_ACCESS_TERMINAL_128:
+  name: "&3CT Draadloze Toegangsterminal &b(128)"
+
+CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  name: "&3CT Draadloze Toegangsterminal &b(Transdimensionaal)"
