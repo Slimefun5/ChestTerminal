@@ -256,7 +256,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
     @Nonnull
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/TheBusyBiscuit/ChestTerminal/issues";
+        return "https://github.com/Slimefun5/ChestTerminal/issues";
     }
 }
 
