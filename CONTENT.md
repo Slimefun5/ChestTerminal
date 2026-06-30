@@ -15,7 +15,7 @@ It adds a Chest Terminal that you can hook up to a Cargo System to access all yo
 You can find Slimefun's community on Discord! Click the badge below to join the server for suggestions/questions or other discussions about this plugin.
 
 <p align="center">
-  <a href="https://discord.gg/fsD4Bkh">
+  <a href="https://discord.gg/CbBYZBEWdR">
     <img src="https://img.shields.io/discord/565557184348422174?color=7289DA&label=Discord&style=for-the-badge" alt="Discord Invite"/>
   </a>
 </p>
