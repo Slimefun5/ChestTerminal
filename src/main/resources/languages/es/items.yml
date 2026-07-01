@@ -1,0 +1,26 @@
+MILKY_QUARTZ:
+  name: "&fCuarzo Lechoso"
+
+CT_PANEL:
+  name: "&3Panel Iluminado CT"
+
+CHEST_TERMINAL:
+  name: "&3Terminal de Acceso CT"
+
+CT_IMPORT_BUS:
+  name: "&3Bus de Importación CT"
+
+CT_EXPORT_BUS:
+  name: "&3Bus de Exportación CT"
+
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: "&3Terminal de Acceso Inalámbrico CT &b(16)"
+
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: "&3Terminal de Acceso Inalámbrico CT &b(64)"
+
+CT_WIRELESS_ACCESS_TERMINAL_128:
+  name: "&3Terminal de Acceso Inalámbrico CT &b(128)"
+
+CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  name: "&3Terminal de Acceso Inalámbrico CT &b(Transdimensional)"
