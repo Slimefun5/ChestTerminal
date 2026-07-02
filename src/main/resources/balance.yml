@@ -1,0 +1,17 @@
+# Per-item balance scores (0-100) for ChestTerminal, relative to vanilla Minecraft.
+# Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
+#   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
+#   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+scores:
+  # --- Cargo network access terminals: remote item retrieval from a Cargo Network ---
+  CHEST_TERMINAL: 32
+  CT_IMPORT_BUS: 30
+  CT_EXPORT_BUS: 30
+  # --- Wireless access terminals: remote terminal access, scaling with range ---
+  CT_WIRELESS_ACCESS_TERMINAL_16: 32
+  CT_WIRELESS_ACCESS_TERMINAL_64: 38
+  CT_WIRELESS_ACCESS_TERMINAL_128: 44
+  CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL: 50
+  # --- Decorative / crafting components ---
+  CT_PANEL: 8
+  MILKY_QUARTZ: 14
