@@ -150,7 +150,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
         WikiText wiki = Slimefun.getWikiText();
         String topicId = "addon_chestterminal";
 
-        wiki.registerTopic(new WikiTopic(topicId, "ChestTerminal", XMaterial.CHEST, "&7Remote access to your cargo"));
+        wiki.registerTopic(new WikiTopic(topicId, "Chest Terminal", XMaterial.CHEST, "&7Remote access to your cargo"));
 
         // Detailed authored description of the cargo-terminal system.
         wiki.setMechanic(topicId, Arrays.asList(
