@@ -2,17 +2,9 @@ package io.github.thebusybiscuit.chestterminal;
 
 import javax.annotation.Nonnull;
 
-<<<<<<< HEAD
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
-import dev.walshy.sfmetrics.MetricsModule;
-=======
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bstats.bukkit.Metrics;
->>>>>>> origin/experimental
 
 import io.github.thebusybiscuit.chestterminal.items.AccessTerminal;
 import io.github.thebusybiscuit.chestterminal.items.ExportBus;
@@ -46,25 +38,12 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-<<<<<<< HEAD
-        MetricsModule.setup(this, 5503);
-
-        // Setting up bStats
-        
-        SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", Material.QUARTZ, "&fMilky Quartz");
-=======
         new Metrics(this, 5503);
 
         // Setting up bStats
         
-<<<<<<< HEAD
-        SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", MaterialCompat.safe(XMaterial.QUARTZ), "&fMilky Quartz");
->>>>>>> origin/experimental
-        SlimefunItemStack ctPanel = new SlimefunItemStack("CT_PANEL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283", "&3CT Illuminated Panel", "&7Crafting Component");
-=======
         SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", MaterialCompat.safe(XMaterial.QUARTZ));
         SlimefunItemStack ctPanel = new SlimefunItemStack("CT_PANEL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283");
->>>>>>> origin/experimental
 
         SlimefunItemStack chestTerminal = new SlimefunItemStack("CHEST_TERMINAL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283");
         SlimefunItemStack importBus = new SlimefunItemStack("CT_IMPORT_BUS", "113db2e7e72ea4432eefbd6e58a85eaa2423f83e642ca41abc6a9317757b889");
