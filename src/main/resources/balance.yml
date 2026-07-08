@@ -1,0 +1,24 @@
+# Per-item balance scores (0-100) for ChestTerminal, relative to vanilla Minecraft.
+# Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
+#   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
+#   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+scores:
+  # --- CT Access Terminal: must be physically placed on a Cargo Network; browses/withdraws
+  #     any item on the ChestTerminal channel (AccessTerminal.java, terminalSlots UI) ---
+  CHEST_TERMINAL: 32
+  # --- Import/Export Bus: attach to an inventory on the network; auto-pulls/pushes items
+  #     to/from the channel with whitelist/blacklist + durability/lore filters (ImportBus.java,
+  #     ExportBus.java) - pure automation convenience, no access reach of their own ---
+  CT_IMPORT_BUS: 30
+  CT_EXPORT_BUS: 30
+  # --- Wireless Access Terminals: link to a placed Access Terminal and open it remotely,
+  #     draining energy per use (WirelessTerminal.java getRange()/getMaxItemCharge()).
+  #     Range and charge buffer scale per tier; Transdimensional drops the range/world check
+  #     entirely (unlimited, cross-dimension) making it the strongest convenience item here ---
+  CT_WIRELESS_ACCESS_TERMINAL_16: 32 # range 16 blocks, same world only, 10 J buffer (0.5 J/use)
+  CT_WIRELESS_ACCESS_TERMINAL_64: 38 # range 64 blocks, same world only, 25 J buffer
+  CT_WIRELESS_ACCESS_TERMINAL_128: 44 # range 128 blocks, same world only, 50 J buffer
+  CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL: 50 # unlimited range, any world/dimension, 50 J buffer
+  # --- Crafting-only components: no standalone function ---
+  CT_PANEL: 8 # decorative screen component for the Access Terminal recipe only
+  MILKY_QUARTZ: 14 # GEO-mined resource (common in Nether, scarce Overworld, absent from End)
