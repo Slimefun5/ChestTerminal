@@ -51,7 +51,7 @@ plugins {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:ChestTerminal:v1.1.2.6")
+    "githubCompileOnly"("Slimefun5:ChestTerminal:v1.1.2.7")
 }
 ```
 
