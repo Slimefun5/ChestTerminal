@@ -57,24 +57,30 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
         ItemGroup itemGroup = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("chestterminal", "chest_terminal"), CustomItemStack.create(chestTerminal.item(), "&5Chest Terminal", "", "&a> Click to open"));
         itemGroup.setTheme("logistics");
 
+        // Milky Quartz and the CT Panel are crafting materials; everything else is logistics gear.
         new SlimefunItem(itemGroup, milkyQuartz, RecipeType.GEO_MINER,
                 new ItemStack[0])
+                .setGuideType("resources")
                 .register(this);
 
         new SlimefunItem(itemGroup, ctPanel, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {milkyQuartz.item(), SlimefunItems.BLISTERING_INGOT_3.item(), milkyQuartz.item(), SlimefunItems.REDSTONE_ALLOY.item(), SlimefunItems.POWER_CRYSTAL.item(), SlimefunItems.REDSTONE_ALLOY.item(), milkyQuartz.item(), SlimefunItems.BLISTERING_INGOT_3.item(), milkyQuartz.item()})
+                .setGuideType("resources")
                 .register(this);
 
         new AccessTerminal(itemGroup, chestTerminal, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {milkyQuartz.item(), SlimefunItems.GPS_TRANSMITTER_3.item(), milkyQuartz.item(), SlimefunItems.POWER_CRYSTAL.item(), ctPanel.item(), SlimefunItems.POWER_CRYSTAL.item(), SlimefunItems.PLASTIC_SHEET.item(), SlimefunItems.ENERGY_REGULATOR.item(), SlimefunItems.PLASTIC_SHEET.item()})
+                .setGuideType("logistics")
                 .register(this);
 
         new ImportBus(itemGroup, importBus, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {SlimefunItems.REDSTONE_ALLOY.item(), SlimefunItems.POWER_CRYSTAL.item(), SlimefunItems.REDSTONE_ALLOY.item(), SlimefunItems.HARDENED_METAL_INGOT.item(), SlimefunItems.CARGO_INPUT_NODE.item(), SlimefunItems.HARDENED_METAL_INGOT.item(), SlimefunItems.PLASTIC_SHEET.item(), SlimefunItems.CARGO_MOTOR.item(), SlimefunItems.PLASTIC_SHEET.item()})
+                .setGuideType("logistics")
                 .register(this);
 
         new ExportBus(itemGroup, exportBus, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {null, SlimefunItems.DAMASCUS_STEEL_INGOT.item(), null, SlimefunItems.ALUMINUM_BRONZE_INGOT.item(), importBus.item(), SlimefunItems.ALUMINUM_BRONZE_INGOT.item(), SlimefunItems.PLASTIC_SHEET.item(), SlimefunItems.GOLD_10K.item(), SlimefunItems.PLASTIC_SHEET.item()})
+                .setGuideType("logistics")
                 .register(this);
 
         new WirelessTerminal(itemGroup, wirelessTerminal16, RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -90,7 +96,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
                 return 10;
             }
 
-        }.register(this);
+        }.setGuideType("logistics").register(this);
 
         new WirelessTerminal(itemGroup, wirelessTerminal64, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {milkyQuartz.item(), SlimefunItems.GPS_TRANSMITTER.item(), milkyQuartz.item(), SlimefunItems.COBALT_INGOT.item(), wirelessTerminal16.item(), SlimefunItems.COBALT_INGOT.item(), SlimefunItems.BATTERY.item(), SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.BATTERY.item()}) {
@@ -105,7 +111,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
                 return 25;
             }
 
-        }.register(this);
+        }.setGuideType("logistics").register(this);
 
         new WirelessTerminal(itemGroup, wirelessTerminal128, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {milkyQuartz.item(), SlimefunItems.GPS_TRANSMITTER_2.item(), milkyQuartz.item(), SlimefunItems.COBALT_INGOT.item(), wirelessTerminal64.item(), SlimefunItems.COBALT_INGOT.item(), SlimefunItems.BATTERY.item(), SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.BATTERY.item()}) {
@@ -120,7 +126,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
                 return 50;
             }
 
-        }.register(this);
+        }.setGuideType("logistics").register(this);
 
         new WirelessTerminal(itemGroup, wirelessTerminalTransdimensional, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {milkyQuartz.item(), SlimefunItems.GPS_TRANSMITTER_4.item(), milkyQuartz.item(), SlimefunItems.COBALT_INGOT.item(), wirelessTerminal128.item(), SlimefunItems.COBALT_INGOT.item(), SlimefunItems.BATTERY.item(), SlimefunItems.BLISTERING_INGOT_3.item(), SlimefunItems.BATTERY.item()}) {
@@ -135,7 +141,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
                 return 50;
             }
 
-        }.register(this);
+        }.setGuideType("logistics").register(this);
 
         new MilkyQuartz(this, milkyQuartz.item()).register();
 
