@@ -38,7 +38,11 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        new Metrics(this, 5503);
+        // Consolidated metrics: only start our own bStats project if the server opted out of consolidation
+        // (metrics.disable-addon-metrics = false). By default the core plugin reports installed addons.
+        if (Slimefun.getCfg().contains("metrics.disable-addon-metrics") && !Slimefun.getCfg().getBoolean("metrics.disable-addon-metrics")) {
+            new Metrics(this, 5503);
+        }
 
         // Setting up bStats
         
