@@ -38,9 +38,7 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        // Consolidated metrics: only start our own bStats project if the server opted out of consolidation
-        // (metrics.disable-addon-metrics = false). By default the core plugin reports installed addons.
-        if (Slimefun.getCfg().contains("metrics.disable-addon-metrics") && !Slimefun.getCfg().getBoolean("metrics.disable-addon-metrics")) {
+        if (shouldStartOwnMetrics()) {
             new Metrics(this, 5503);
         }
 
@@ -152,6 +150,15 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
 
         // Register this addon's own in-game wiki page (core does not auto-generate addon wikis).
         registerWiki();
+    }
+
+    /**
+     * @implNote Only start our own bStats project when the server opted out of
+     *           consolidated metrics (metrics.disable-addon-metrics = false); by
+     *           default the core plugin already reports installed addons.
+     */
+    private boolean shouldStartOwnMetrics() {
+        return Slimefun.getCfg().contains("metrics.disable-addon-metrics") && !Slimefun.getCfg().getBoolean("metrics.disable-addon-metrics");
     }
 
     private void registerWiki() {
