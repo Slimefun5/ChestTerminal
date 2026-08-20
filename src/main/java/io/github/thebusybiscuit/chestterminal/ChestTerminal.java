@@ -38,10 +38,10 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        new Metrics(this, 5503);
+        if (shouldStartOwnMetrics()) {
+            new Metrics(this, 5503);
+        }
 
-        // Setting up bStats
-        
         SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", MaterialCompat.safe(XMaterial.QUARTZ));
         SlimefunItemStack ctPanel = new SlimefunItemStack("CT_PANEL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283");
 
@@ -152,13 +152,21 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
         registerWiki();
     }
 
+    /**
+     * @implNote Only start our own bStats project when the server opted out of
+     *           consolidated metrics (metrics.disable-addon-metrics = false); by
+     *           default the core plugin already reports installed addons.
+     */
+    private boolean shouldStartOwnMetrics() {
+        return Slimefun.getCfg().contains("metrics.disable-addon-metrics") && !Slimefun.getCfg().getBoolean("metrics.disable-addon-metrics");
+    }
+
     private void registerWiki() {
         WikiText wiki = Slimefun.getWikiText();
         String topicId = "addon_chestterminal";
 
         wiki.registerTopic(new WikiTopic(topicId, "Chest Terminal", XMaterial.CHEST, "&7Remote access to your cargo"));
 
-        // Detailed authored description of the cargo-terminal system.
         wiki.setMechanic(topicId, Arrays.asList(
             "&3&lThe Cargo Terminal System", "",
             "&7ChestTerminal turns an ordinary cargo", "&7network into a searchable, remotely",
@@ -179,7 +187,6 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
             "&7variant works across worlds with unlimited range.", "",
             "&7Click an item below for its recipe and details."));
 
-        // Collect this addon's own items dynamically - never hardcode item lists.
         List<String> items = new ArrayList<>();
 
         for (SlimefunItem item : Slimefun.getRegistry().getEnabledSlimefunItems()) {
@@ -194,7 +201,6 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
 
         wiki.setTopicItems(topicId, items);
 
-        // Authored per-item explanation pages.
         registerItemPages(wiki);
     }
 
