@@ -3,6 +3,7 @@ package io.github.thebusybiscuit.chestterminal.items;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
+import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -53,6 +54,7 @@ public class AccessTerminal extends SimpleSlimefunItem<BlockTicker> {
 
             @Override
             public void init() {
+                optOutOfHeaderItem(ChatColor.DARK_AQUA);
                 constructMenu(this);
             }
 
