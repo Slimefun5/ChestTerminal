@@ -55,6 +55,8 @@ public class ChestTerminal extends JavaPlugin implements SlimefunAddon {
         SlimefunItemStack wirelessTerminalTransdimensional = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL", MaterialCompat.safe(XMaterial.ITEM_FRAME));
 
         ItemGroup itemGroup = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("chestterminal", "chest_terminal"), CustomItemStack.create(chestTerminal.item(), "&5Chest Terminal", "", "&a> Click to open"));
+        // Places this addon's items in the shared guide categories (see ItemTypeClassifier).
+        itemGroup.setCategory("logistics");
         itemGroup.setTheme("logistics");
 
         // Milky Quartz and the CT Panel are crafting materials; everything else is logistics gear.
