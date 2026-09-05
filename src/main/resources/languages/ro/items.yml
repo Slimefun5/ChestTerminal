@@ -1,0 +1,27 @@
+CHEST_TERMINAL:
+  type:
+  - '&7&oMașină'
+CT_EXPORT_BUS:
+  type:
+  - '&7&oMașină'
+CT_IMPORT_BUS:
+  type:
+  - '&7&oMașină'
+CT_PANEL:
+  type:
+  - '&7&oComponentă'
+CT_WIRELESS_ACCESS_TERMINAL_128:
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  type:
+  - '&7&oGadget'
+MILKY_QUARTZ:
+  type:
+  - '&7&oResursă'

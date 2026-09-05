@@ -1,26 +1,36 @@
-MILKY_QUARTZ:
-  name: "&fQuartz Laiteux"
-
-CT_PANEL:
-  name: "&3Panneau Lumineux CT"
-
 CHEST_TERMINAL:
-  name: "&3Terminal d'Accès CT"
-
-CT_IMPORT_BUS:
-  name: "&3Bus d'Importation CT"
-
+  name: '&3Terminal d''Accès CT'
+  type:
+  - '&7&oMachine'
 CT_EXPORT_BUS:
-  name: "&3Bus d'Exportation CT"
-
-CT_WIRELESS_ACCESS_TERMINAL_16:
-  name: "&3Terminal d'Accès Sans Fil CT &b(16)"
-
-CT_WIRELESS_ACCESS_TERMINAL_64:
-  name: "&3Terminal d'Accès Sans Fil CT &b(64)"
-
+  name: '&3Bus d''Exportation CT'
+  type:
+  - '&7&oMachine'
+CT_IMPORT_BUS:
+  name: '&3Bus d''Importation CT'
+  type:
+  - '&7&oMachine'
+CT_PANEL:
+  name: '&3Panneau Lumineux CT'
+  type:
+  - '&7&oComposant'
 CT_WIRELESS_ACCESS_TERMINAL_128:
-  name: "&3Terminal d'Accès Sans Fil CT &b(128)"
-
+  name: '&3Terminal d''Accès Sans Fil CT &b(128)'
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: '&3Terminal d''Accès Sans Fil CT &b(16)'
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: '&3Terminal d''Accès Sans Fil CT &b(64)'
+  type:
+  - '&7&oGadget'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
-  name: "&3Terminal d'Accès Sans Fil CT &b(Transdimensionnel)"
+  name: '&3Terminal d''Accès Sans Fil CT &b(Transdimensionnel)'
+  type:
+  - '&7&oGadget'
+MILKY_QUARTZ:
+  name: '&fQuartz Laiteux'
+  type:
+  - '&7&oRessource'

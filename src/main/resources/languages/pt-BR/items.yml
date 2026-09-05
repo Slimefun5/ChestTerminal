@@ -1,26 +1,36 @@
-MILKY_QUARTZ:
-  name: "&fQuartzo Leitoso"
-
-CT_PANEL:
-  name: "&3Painel Iluminado CT"
-
 CHEST_TERMINAL:
-  name: "&3Terminal de Acesso CT"
-
-CT_IMPORT_BUS:
-  name: "&3Barramento de Importação CT"
-
+  name: '&3Terminal de Acesso CT'
+  type:
+  - '&7&oMáquina'
 CT_EXPORT_BUS:
-  name: "&3Barramento de Exportação CT"
-
-CT_WIRELESS_ACCESS_TERMINAL_16:
-  name: "&3Terminal de Acesso Sem Fio CT &b(16)"
-
-CT_WIRELESS_ACCESS_TERMINAL_64:
-  name: "&3Terminal de Acesso Sem Fio CT &b(64)"
-
+  name: '&3Barramento de Exportação CT'
+  type:
+  - '&7&oMáquina'
+CT_IMPORT_BUS:
+  name: '&3Barramento de Importação CT'
+  type:
+  - '&7&oMáquina'
+CT_PANEL:
+  name: '&3Painel Iluminado CT'
+  type:
+  - '&7&oComponente'
 CT_WIRELESS_ACCESS_TERMINAL_128:
-  name: "&3Terminal de Acesso Sem Fio CT &b(128)"
-
+  name: '&3Terminal de Acesso Sem Fio CT &b(128)'
+  type:
+  - '&7&oUtensílio'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: '&3Terminal de Acesso Sem Fio CT &b(16)'
+  type:
+  - '&7&oUtensílio'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: '&3Terminal de Acesso Sem Fio CT &b(64)'
+  type:
+  - '&7&oUtensílio'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
-  name: "&3Terminal de Acesso Sem Fio CT &b(Transdimensional)"
+  name: '&3Terminal de Acesso Sem Fio CT &b(Transdimensional)'
+  type:
+  - '&7&oUtensílio'
+MILKY_QUARTZ:
+  name: '&fQuartzo Leitoso'
+  type:
+  - '&7&oRecurso'

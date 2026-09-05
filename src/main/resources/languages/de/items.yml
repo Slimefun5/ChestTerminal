@@ -1,26 +1,36 @@
-MILKY_QUARTZ:
-  name: "&fMilchiger Quarz"
-
-CT_PANEL:
-  name: "&3CT Beleuchtetes Panel"
-
 CHEST_TERMINAL:
-  name: "&3CT Zugriffsterminal"
-
-CT_IMPORT_BUS:
-  name: "&3CT Import-Bus"
-
+  name: '&3CT Zugriffsterminal'
+  type:
+  - '&7&oMaschine'
 CT_EXPORT_BUS:
-  name: "&3CT Export-Bus"
-
-CT_WIRELESS_ACCESS_TERMINAL_16:
-  name: "&3CT Drahtloses Zugriffsterminal &b(16)"
-
-CT_WIRELESS_ACCESS_TERMINAL_64:
-  name: "&3CT Drahtloses Zugriffsterminal &b(64)"
-
+  name: '&3CT Export-Bus'
+  type:
+  - '&7&oMaschine'
+CT_IMPORT_BUS:
+  name: '&3CT Import-Bus'
+  type:
+  - '&7&oMaschine'
+CT_PANEL:
+  name: '&3CT Beleuchtetes Panel'
+  type:
+  - '&7&oKomponente'
 CT_WIRELESS_ACCESS_TERMINAL_128:
-  name: "&3CT Drahtloses Zugriffsterminal &b(128)"
-
+  name: '&3CT Drahtloses Zugriffsterminal &b(128)'
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: '&3CT Drahtloses Zugriffsterminal &b(16)'
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: '&3CT Drahtloses Zugriffsterminal &b(64)'
+  type:
+  - '&7&oGadget'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
-  name: "&3CT Drahtloses Zugriffsterminal &b(Transdimensional)"
+  name: '&3CT Drahtloses Zugriffsterminal &b(Transdimensional)'
+  type:
+  - '&7&oGadget'
+MILKY_QUARTZ:
+  name: '&fMilchiger Quarz'
+  type:
+  - '&7&oRohstoff'

@@ -1,26 +1,36 @@
-MILKY_QUARTZ:
-  name: "&fMelkachtig Kwarts"
-
-CT_PANEL:
-  name: "&3CT Verlicht Paneel"
-
 CHEST_TERMINAL:
-  name: "&3CT Toegangsterminal"
-
-CT_IMPORT_BUS:
-  name: "&3CT Importbus"
-
+  name: '&3CT Toegangsterminal'
+  type:
+  - '&7&oMachine'
 CT_EXPORT_BUS:
-  name: "&3CT Exportbus"
-
-CT_WIRELESS_ACCESS_TERMINAL_16:
-  name: "&3CT Draadloze Toegangsterminal &b(16)"
-
-CT_WIRELESS_ACCESS_TERMINAL_64:
-  name: "&3CT Draadloze Toegangsterminal &b(64)"
-
+  name: '&3CT Exportbus'
+  type:
+  - '&7&oMachine'
+CT_IMPORT_BUS:
+  name: '&3CT Importbus'
+  type:
+  - '&7&oMachine'
+CT_PANEL:
+  name: '&3CT Verlicht Paneel'
+  type:
+  - '&7&oOnderdeel'
 CT_WIRELESS_ACCESS_TERMINAL_128:
-  name: "&3CT Draadloze Toegangsterminal &b(128)"
-
+  name: '&3CT Draadloze Toegangsterminal &b(128)'
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: '&3CT Draadloze Toegangsterminal &b(16)'
+  type:
+  - '&7&oGadget'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: '&3CT Draadloze Toegangsterminal &b(64)'
+  type:
+  - '&7&oGadget'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
-  name: "&3CT Draadloze Toegangsterminal &b(Transdimensionaal)"
+  name: '&3CT Draadloze Toegangsterminal &b(Transdimensionaal)'
+  type:
+  - '&7&oGadget'
+MILKY_QUARTZ:
+  name: '&fMelkachtig Kwarts'
+  type:
+  - '&7&oGrondstof'

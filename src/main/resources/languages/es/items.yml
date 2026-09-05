@@ -1,26 +1,36 @@
-MILKY_QUARTZ:
-  name: "&fCuarzo Lechoso"
-
-CT_PANEL:
-  name: "&3Panel Iluminado CT"
-
 CHEST_TERMINAL:
-  name: "&3Terminal de Acceso CT"
-
-CT_IMPORT_BUS:
-  name: "&3Bus de Importación CT"
-
+  name: '&3Terminal de Acceso CT'
+  type:
+  - '&7&oMáquina'
 CT_EXPORT_BUS:
-  name: "&3Bus de Exportación CT"
-
-CT_WIRELESS_ACCESS_TERMINAL_16:
-  name: "&3Terminal de Acceso Inalámbrico CT &b(16)"
-
-CT_WIRELESS_ACCESS_TERMINAL_64:
-  name: "&3Terminal de Acceso Inalámbrico CT &b(64)"
-
+  name: '&3Bus de Exportación CT'
+  type:
+  - '&7&oMáquina'
+CT_IMPORT_BUS:
+  name: '&3Bus de Importación CT'
+  type:
+  - '&7&oMáquina'
+CT_PANEL:
+  name: '&3Panel Iluminado CT'
+  type:
+  - '&7&oComponente'
 CT_WIRELESS_ACCESS_TERMINAL_128:
-  name: "&3Terminal de Acceso Inalámbrico CT &b(128)"
-
+  name: '&3Terminal de Acceso Inalámbrico CT &b(128)'
+  type:
+  - '&7&oAparato'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: '&3Terminal de Acceso Inalámbrico CT &b(16)'
+  type:
+  - '&7&oAparato'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: '&3Terminal de Acceso Inalámbrico CT &b(64)'
+  type:
+  - '&7&oAparato'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
-  name: "&3Terminal de Acceso Inalámbrico CT &b(Transdimensional)"
+  name: '&3Terminal de Acceso Inalámbrico CT &b(Transdimensional)'
+  type:
+  - '&7&oAparato'
+MILKY_QUARTZ:
+  name: '&fCuarzo Lechoso'
+  type:
+  - '&7&oRecurso'

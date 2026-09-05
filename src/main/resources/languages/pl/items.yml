@@ -1,26 +1,36 @@
-MILKY_QUARTZ:
-  name: "&fMleczny Kwarc"
-
-CT_PANEL:
-  name: "&3Podświetlany Panel CT"
-
 CHEST_TERMINAL:
-  name: "&3Terminal Dostępu CT"
-
-CT_IMPORT_BUS:
-  name: "&3Magistrala Importu CT"
-
+  name: '&3Terminal Dostępu CT'
+  type:
+  - '&7&oMaszyna'
 CT_EXPORT_BUS:
-  name: "&3Magistrala Eksportu CT"
-
-CT_WIRELESS_ACCESS_TERMINAL_16:
-  name: "&3Bezprzewodowy Terminal Dostępu CT &b(16)"
-
-CT_WIRELESS_ACCESS_TERMINAL_64:
-  name: "&3Bezprzewodowy Terminal Dostępu CT &b(64)"
-
+  name: '&3Magistrala Eksportu CT'
+  type:
+  - '&7&oMaszyna'
+CT_IMPORT_BUS:
+  name: '&3Magistrala Importu CT'
+  type:
+  - '&7&oMaszyna'
+CT_PANEL:
+  name: '&3Podświetlany Panel CT'
+  type:
+  - '&7&oKomponent'
 CT_WIRELESS_ACCESS_TERMINAL_128:
-  name: "&3Bezprzewodowy Terminal Dostępu CT &b(128)"
-
+  name: '&3Bezprzewodowy Terminal Dostępu CT &b(128)'
+  type:
+  - '&7&oGadżet'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: '&3Bezprzewodowy Terminal Dostępu CT &b(16)'
+  type:
+  - '&7&oGadżet'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: '&3Bezprzewodowy Terminal Dostępu CT &b(64)'
+  type:
+  - '&7&oGadżet'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
-  name: "&3Bezprzewodowy Terminal Dostępu CT &b(Transwymiarowy)"
+  name: '&3Bezprzewodowy Terminal Dostępu CT &b(Transwymiarowy)'
+  type:
+  - '&7&oGadżet'
+MILKY_QUARTZ:
+  name: '&fMleczny Kwarc'
+  type:
+  - '&7&oSurowiec'

@@ -1,26 +1,36 @@
-MILKY_QUARTZ:
-  name: "&fМолочный Кварц"
-
-CT_PANEL:
-  name: "&3CT Светящаяся Панель"
-
 CHEST_TERMINAL:
-  name: "&3CT Терминал Доступа"
-
-CT_IMPORT_BUS:
-  name: "&3CT Импортная Шина"
-
+  name: '&3CT Терминал Доступа'
+  type:
+  - '&7&oМашина'
 CT_EXPORT_BUS:
-  name: "&3CT Экспортная Шина"
-
-CT_WIRELESS_ACCESS_TERMINAL_16:
-  name: "&3CT Беспроводной Терминал Доступа &b(16)"
-
-CT_WIRELESS_ACCESS_TERMINAL_64:
-  name: "&3CT Беспроводной Терминал Доступа &b(64)"
-
+  name: '&3CT Экспортная Шина'
+  type:
+  - '&7&oМашина'
+CT_IMPORT_BUS:
+  name: '&3CT Импортная Шина'
+  type:
+  - '&7&oМашина'
+CT_PANEL:
+  name: '&3CT Светящаяся Панель'
+  type:
+  - '&7&oКомпонент'
 CT_WIRELESS_ACCESS_TERMINAL_128:
-  name: "&3CT Беспроводной Терминал Доступа &b(128)"
-
+  name: '&3CT Беспроводной Терминал Доступа &b(128)'
+  type:
+  - '&7&oГаджет'
+CT_WIRELESS_ACCESS_TERMINAL_16:
+  name: '&3CT Беспроводной Терминал Доступа &b(16)'
+  type:
+  - '&7&oГаджет'
+CT_WIRELESS_ACCESS_TERMINAL_64:
+  name: '&3CT Беспроводной Терминал Доступа &b(64)'
+  type:
+  - '&7&oГаджет'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
-  name: "&3CT Беспроводной Терминал Доступа &b(Межпространственный)"
+  name: '&3CT Беспроводной Терминал Доступа &b(Межпространственный)'
+  type:
+  - '&7&oГаджет'
+MILKY_QUARTZ:
+  name: '&fМолочный Кварц'
+  type:
+  - '&7&oРесурс'
