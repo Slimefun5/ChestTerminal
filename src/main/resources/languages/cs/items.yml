@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Pokud je tento blok připojen k'
+  - '&7nákladní síti, umožní ti na dálku'
+  - '&7pracovat s předměty, které dodávají'
+  - '&7uzly naladěné na kanál ChestTerminal'
+  name: '&3CT přístupový terminál'
   type:
   - '&7&oStroj'
 CT_EXPORT_BUS:
+  description:
+  - '&7Pokud je tento blok připojen k'
+  - '&7nákladní síti, bude vytahovat předměty z'
+  - '&7síťového kanálu CT a vloží je'
+  - '&7do inventáře, ke kterému je připojen'
+  name: '&3CT výstupní sběrnice'
   type:
   - '&7&oStroj'
 CT_IMPORT_BUS:
+  description:
+  - '&7Pokud je tento blok připojen k'
+  - '&7nákladní síti, bude vytahovat předměty z'
+  - '&7inventáře, ke kterému je připojen, a vloží je'
+  - '&7do síťového kanálu CT'
+  name: '&3CT vstupní sběrnice'
   type:
   - '&7&oStroj'
 CT_PANEL:
+  name: '&3CT osvětlený panel'
   type:
   - '&7&oKomponenta'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Pokud je tento blok propojený s přístupovým terminálem,'
+  - '&7bude moci k tomuto terminálu přistupovat na dálku'
+  name: '&3CT bezdrátový přístupový terminál &b(128)'
+  stats:
+  - '&8⇨ &7Dosah: &e128 bloků'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oPomůcka'
+  usage:
+  - '&ePravý klik na přístupový terminál &7k propojení'
+  - '&ePravý klik&7 otevře propojený terminál'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Pokud je tento blok propojený s přístupovým terminálem,'
+  - '&7bude moci k tomuto terminálu přistupovat na dálku'
+  name: '&3CT bezdrátový přístupový terminál &b(16)'
+  stats:
+  - '&8⇨ &7Dosah: &e16 bloků'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oPomůcka'
+  usage:
+  - '&ePravý klik na přístupový terminál &7k propojení'
+  - '&ePravý klik&7 otevře propojený terminál'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Pokud je tento blok propojený s přístupovým terminálem,'
+  - '&7bude moci k tomuto terminálu přistupovat na dálku'
+  name: '&3CT bezdrátový přístupový terminál &b(64)'
+  stats:
+  - '&8⇨ &7Dosah: &e64 bloků'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oPomůcka'
+  usage:
+  - '&ePravý klik na přístupový terminál &7k propojení'
+  - '&ePravý klik&7 otevře propojený terminál'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Pokud je tento blok propojený s přístupovým terminálem,'
+  - '&7bude moci k tomuto terminálu přistupovat na dálku'
+  name: '&3CT bezdrátový přístupový terminál &b(Transdimenzionální)'
+  stats:
+  - '&8⇨ &7Dosah: &eNeomezený'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oPomůcka'
+  usage:
+  - '&ePravý klik na přístupový terminál &7k propojení'
+  - '&ePravý klik&7 otevře propojený terminál'
 MILKY_QUARTZ:
+  name: '&fMléčný křemen'
   type:
   - '&7&oSurovina'
