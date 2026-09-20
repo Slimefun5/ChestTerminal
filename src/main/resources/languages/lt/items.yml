@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Jei šis blokas prijungtas prie'
+  - '&7krovinių tinklo, jis leis jums nuotoliniu būdu'
+  - '&7sąveikauti su bet kuriais daiktais, kuriuos tiekia'
+  - '&7mazgai, suderinti su ChestTerminal kanalu'
+  name: '&3CT prieigos terminalas'
   type:
   - '&7&oMašina'
 CT_EXPORT_BUS:
+  description:
+  - '&7Jei šis blokas prijungtas prie'
+  - '&7krovinių tinklo, jis trauks visus daiktus iš'
+  - '&7CT tinklo kanalo ir dės juos'
+  - '&7į inventorių, prie kurio prijungtas'
+  name: '&3CT eksporto magistralė'
   type:
   - '&7&oMašina'
 CT_IMPORT_BUS:
+  description:
+  - '&7Jei šis blokas prijungtas prie'
+  - '&7krovinių tinklo, jis trauks visus daiktus iš'
+  - '&7inventoriaus, prie kurio prijungtas, ir dės juos'
+  - '&7į CT tinklo kanalą'
+  name: '&3CT importo magistralė'
   type:
   - '&7&oMašina'
 CT_PANEL:
+  name: '&3CT apšviestas skydelis'
   type:
   - '&7&oKomponentas'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Jei šis blokas susietas su prieigos terminalu,'
+  - '&7jis galės nuotoliniu būdu pasiekti tą terminalą'
+  name: '&3CT belaidis prieigos terminalas &b(128)'
+  stats:
+  - '&8⇨ &7Nuotolis: &e128 blokų'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oĮtaisas'
+  usage:
+  - '&eSpustelėkite dešiniu prieigos terminalą &7- susiesite'
+  - '&eSpustelėkite dešiniu&7, kad atidarytumėte susietą terminalą'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Jei šis blokas susietas su prieigos terminalu,'
+  - '&7jis galės nuotoliniu būdu pasiekti tą terminalą'
+  name: '&3CT belaidis prieigos terminalas &b(16)'
+  stats:
+  - '&8⇨ &7Nuotolis: &e16 blokų'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oĮtaisas'
+  usage:
+  - '&eSpustelėkite dešiniu prieigos terminalą &7- susiesite'
+  - '&eSpustelėkite dešiniu&7, kad atidarytumėte susietą terminalą'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Jei šis blokas susietas su prieigos terminalu,'
+  - '&7jis galės nuotoliniu būdu pasiekti tą terminalą'
+  name: '&3CT belaidis prieigos terminalas &b(64)'
+  stats:
+  - '&8⇨ &7Nuotolis: &e64 blokai'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oĮtaisas'
+  usage:
+  - '&eSpustelėkite dešiniu prieigos terminalą &7- susiesite'
+  - '&eSpustelėkite dešiniu&7, kad atidarytumėte susietą terminalą'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Jei šis blokas susietas su prieigos terminalu,'
+  - '&7jis galės nuotoliniu būdu pasiekti tą terminalą'
+  name: '&3CT belaidis prieigos terminalas &b(tarpdimensinis)'
+  stats:
+  - '&8⇨ &7Nuotolis: &eNeribotas'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oĮtaisas'
+  usage:
+  - '&eSpustelėkite dešiniu prieigos terminalą &7- susiesite'
+  - '&eSpustelėkite dešiniu&7, kad atidarytumėte susietą terminalą'
 MILKY_QUARTZ:
+  name: '&fPieniškas kvarcas'
   type:
   - '&7&oIšteklius'
