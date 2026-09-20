@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Ako je ovaj blok povezan s'
+  - '&7teretnom mrežom, omogućit će ti da daljinski'
+  - '&7rukuješ svim predmetima koje isporučuju'
+  - '&7čvorovi ugođeni na ChestTerminal kanal'
+  name: '&3CT pristupni terminal'
   type:
   - '&7&oStroj'
 CT_EXPORT_BUS:
+  description:
+  - '&7Ako je ovaj blok povezan s'
+  - '&7teretnom mrežom, povlačit će sve predmete iz'
+  - '&7CT mrežnog kanala i stavljati ih'
+  - '&7u inventar na koji je pričvršćena'
+  name: '&3CT izlazna sabirnica'
   type:
   - '&7&oStroj'
 CT_IMPORT_BUS:
+  description:
+  - '&7Ako je ovaj blok povezan s'
+  - '&7teretnom mrežom, povlačit će sve predmete iz'
+  - '&7inventara na koji je pričvršćena i stavljati ih'
+  - '&7u CT mrežni kanal'
+  name: '&3CT ulazna sabirnica'
   type:
   - '&7&oStroj'
 CT_PANEL:
+  name: '&3CT osvijetljeni panel'
   type:
   - '&7&oKomponenta'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Ako je ovaj blok povezan s pristupnim terminalom'
+  - '&7moći će daljinski pristupati tom terminalu'
+  name: '&3CT bežični pristupni terminal &b(128)'
+  stats:
+  - '&8⇨ &7Domet: &e128 blokova'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&eDesni klik na pristupni terminal &7za povezivanje'
+  - '&eDesni klik&7 za otvaranje povezanog terminala'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Ako je ovaj blok povezan s pristupnim terminalom'
+  - '&7moći će daljinski pristupati tom terminalu'
+  name: '&3CT bežični pristupni terminal &b(16)'
+  stats:
+  - '&8⇨ &7Domet: &e16 blokova'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&eDesni klik na pristupni terminal &7za povezivanje'
+  - '&eDesni klik&7 za otvaranje povezanog terminala'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Ako je ovaj blok povezan s pristupnim terminalom'
+  - '&7moći će daljinski pristupati tom terminalu'
+  name: '&3CT bežični pristupni terminal &b(64)'
+  stats:
+  - '&8⇨ &7Domet: &e64 blokova'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&eDesni klik na pristupni terminal &7za povezivanje'
+  - '&eDesni klik&7 za otvaranje povezanog terminala'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Ako je ovaj blok povezan s pristupnim terminalom'
+  - '&7moći će daljinski pristupati tom terminalu'
+  name: '&3CT bežični pristupni terminal &b(Transdimenzionalni)'
+  stats:
+  - '&8⇨ &7Domet: &eNeograničen'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&eDesni klik na pristupni terminal &7za povezivanje'
+  - '&eDesni klik&7 za otvaranje povezanog terminala'
 MILKY_QUARTZ:
+  name: '&fMliječni kvarc'
   type:
   - '&7&oResurs'
