@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Ja šis bloks ir pievienots'
+  - '&7kravas tīklam, tas ļaus tev attālināti'
+  - '&7mijiedarboties ar visiem priekšmetiem, ko piegādā'
+  - '&7mezgli, kas noskaņoti uz ChestTerminal kanālu'
+  name: '&3CT piekļuves terminālis'
   type:
   - '&7&oMašīna'
 CT_EXPORT_BUS:
+  description:
+  - '&7Ja šis bloks ir pievienots'
+  - '&7kravas tīklam, tas izvilks visus priekšmetus no'
+  - '&7CT tīkla kanāla un ievietos tos'
+  - '&7inventārā, kuram tas ir pievienots'
+  name: '&3CT izvades kopne'
   type:
   - '&7&oMašīna'
 CT_IMPORT_BUS:
+  description:
+  - '&7Ja šis bloks ir pievienots'
+  - '&7kravas tīklam, tas izvilks visus priekšmetus no'
+  - '&7inventāra, kuram tas pievienots, un ievietos tos'
+  - '&7CT tīkla kanālā'
+  name: '&3CT ievades kopne'
   type:
   - '&7&oMašīna'
 CT_PANEL:
+  name: '&3CT apgaismotais panelis'
   type:
   - '&7&oSastāvdaļa'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Ja šis bloks ir saistīts ar piekļuves termināli'
+  - '&7tas varēs attālināti piekļūt šim terminālim'
+  name: '&3CT bezvadu piekļuves terminālis &b(128)'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e128 bloki'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eLabais klikšķis uz piekļuves termināļa&7, lai to saistītu'
+  - '&eLabais klikšķis&7, lai atvērtu saistīto termināli'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Ja šis bloks ir saistīts ar piekļuves termināli'
+  - '&7tas varēs attālināti piekļūt šim terminālim'
+  name: '&3CT bezvadu piekļuves terminālis &b(16)'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e16 bloki'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eLabais klikšķis uz piekļuves termināļa&7, lai to saistītu'
+  - '&eLabais klikšķis&7, lai atvērtu saistīto termināli'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Ja šis bloks ir saistīts ar piekļuves termināli'
+  - '&7tas varēs attālināti piekļūt šim terminālim'
+  name: '&3CT bezvadu piekļuves terminālis &b(64)'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e64 bloki'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eLabais klikšķis uz piekļuves termināļa&7, lai to saistītu'
+  - '&eLabais klikšķis&7, lai atvērtu saistīto termināli'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Ja šis bloks ir saistīts ar piekļuves termināli'
+  - '&7tas varēs attālināti piekļūt šim terminālim'
+  name: '&3CT bezvadu piekļuves terminālis &b(Starpdimensiju)'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &eNeierobežots'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eLabais klikšķis uz piekļuves termināļa&7, lai to saistītu'
+  - '&eLabais klikšķis&7, lai atvērtu saistīto termināli'
 MILKY_QUARTZ:
+  name: '&fPienainais kvarcs'
   type:
   - '&7&oResurss'
