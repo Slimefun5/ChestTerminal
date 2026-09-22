@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Se este Bloco estiver ligado a uma'
+  - '&7Rede de Carga, permite-te interagir remotamente'
+  - '&7com quaisquer Itens fornecidos por'
+  - '&7Nós sintonizados no Canal ChestTerminal'
+  name: '&3Terminal de Acesso CT'
   type:
   - '&7&oMáquina'
 CT_EXPORT_BUS:
+  description:
+  - '&7Se este Bloco estiver ligado a uma'
+  - '&7Rede de Carga, retira quaisquer Itens do'
+  - '&7Canal da Rede CT e coloca-os'
+  - '&7no Inventário a que está ligado'
+  name: '&3Barramento de Exportação CT'
   type:
   - '&7&oMáquina'
 CT_IMPORT_BUS:
+  description:
+  - '&7Se este Bloco estiver ligado a uma'
+  - '&7Rede de Carga, retira quaisquer Itens do'
+  - '&7Inventário a que está ligado e coloca-os'
+  - '&7no Canal da Rede CT'
+  name: '&3Barramento de Importação CT'
   type:
   - '&7&oMáquina'
 CT_PANEL:
+  name: '&3Painel Iluminado CT'
   type:
   - '&7&oComponente'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Se este Bloco estiver ligado a um Terminal de Acesso'
+  - '&7poderá aceder remotamente a esse Terminal'
+  name: '&3Terminal de Acesso Sem Fios CT &b(128)'
+  stats:
+  - '&8⇨ &7Alcance: &e128 Blocos'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oAcessório'
+  usage:
+  - '&eClique Direito num Terminal de Acesso &7para ligar'
+  - '&eClique Direito&7 para abrir o Terminal ligado'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Se este Bloco estiver ligado a um Terminal de Acesso'
+  - '&7poderá aceder remotamente a esse Terminal'
+  name: '&3Terminal de Acesso Sem Fios CT &b(16)'
+  stats:
+  - '&8⇨ &7Alcance: &e16 Blocos'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oAcessório'
+  usage:
+  - '&eClique Direito num Terminal de Acesso &7para ligar'
+  - '&eClique Direito&7 para abrir o Terminal ligado'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Se este Bloco estiver ligado a um Terminal de Acesso'
+  - '&7poderá aceder remotamente a esse Terminal'
+  name: '&3Terminal de Acesso Sem Fios CT &b(64)'
+  stats:
+  - '&8⇨ &7Alcance: &e64 Blocos'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oAcessório'
+  usage:
+  - '&eClique Direito num Terminal de Acesso &7para ligar'
+  - '&eClique Direito&7 para abrir o Terminal ligado'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Se este Bloco estiver ligado a um Terminal de Acesso'
+  - '&7poderá aceder remotamente a esse Terminal'
+  name: '&3Terminal de Acesso Sem Fios CT &b(Transdimensional)'
+  stats:
+  - '&8⇨ &7Alcance: &eIlimitado'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oAcessório'
+  usage:
+  - '&eClique Direito num Terminal de Acesso &7para ligar'
+  - '&eClique Direito&7 para abrir o Terminal ligado'
 MILKY_QUARTZ:
+  name: '&fQuartzo Leitoso'
   type:
   - '&7&oRecurso'
