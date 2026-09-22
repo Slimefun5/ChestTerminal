@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Hvis denne blokken er koblet til et'
+  - '&7fraktnettverk, lar den deg på avstand'
+  - '&7samhandle med alle gjenstander levert av'
+  - '&7noder som er innstilt på ChestTerminal-kanalen'
+  name: '&3CT tilgangsterminal'
   type:
   - '&7&oMaskin'
 CT_EXPORT_BUS:
+  description:
+  - '&7Hvis denne blokken er koblet til et'
+  - '&7fraktnettverk, henter den alle gjenstander fra'
+  - '&7CT-nettverkskanalen og plasserer disse'
+  - '&7inn i inventaret den er festet til'
+  name: '&3CT eksportbuss'
   type:
   - '&7&oMaskin'
 CT_IMPORT_BUS:
+  description:
+  - '&7Hvis denne blokken er koblet til et'
+  - '&7fraktnettverk, henter den alle gjenstander fra'
+  - '&7inventaret den er festet til og plasserer dem'
+  - '&7inn i CT-nettverkskanalen'
+  name: '&3CT importbuss'
   type:
   - '&7&oMaskin'
 CT_PANEL:
+  name: '&3CT opplyst panel'
   type:
   - '&7&oKomponent'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Hvis denne blokken er koblet til en tilgangsterminal'
+  - '&7kan den nå den terminalen på avstand'
+  name: '&3CT trådløs tilgangsterminal &b(128)'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e128 blokker'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oDings'
+  usage:
+  - '&eHøyreklikk på en tilgangsterminal &7for å koble'
+  - '&eHøyreklikk&7 for å åpne den koblede terminalen'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Hvis denne blokken er koblet til en tilgangsterminal'
+  - '&7kan den nå den terminalen på avstand'
+  name: '&3CT trådløs tilgangsterminal &b(16)'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e16 blokker'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oDings'
+  usage:
+  - '&eHøyreklikk på en tilgangsterminal &7for å koble'
+  - '&eHøyreklikk&7 for å åpne den koblede terminalen'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Hvis denne blokken er koblet til en tilgangsterminal'
+  - '&7kan den nå den terminalen på avstand'
+  name: '&3CT trådløs tilgangsterminal &b(64)'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e64 blokker'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oDings'
+  usage:
+  - '&eHøyreklikk på en tilgangsterminal &7for å koble'
+  - '&eHøyreklikk&7 for å åpne den koblede terminalen'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Hvis denne blokken er koblet til en tilgangsterminal'
+  - '&7kan den nå den terminalen på avstand'
+  name: '&3CT trådløs tilgangsterminal &b(Transdimensjonal)'
+  stats:
+  - '&8⇨ &7Rekkevidde: &eUbegrenset'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oDings'
+  usage:
+  - '&eHøyreklikk på en tilgangsterminal &7for å koble'
+  - '&eHøyreklikk&7 for å åpne den koblede terminalen'
 MILKY_QUARTZ:
+  name: '&fMelkeaktig kvarts'
   type:
   - '&7&oRessurs'
