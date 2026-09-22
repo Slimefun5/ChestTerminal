@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Hvis denne blok er forbundet til et'
+  - '&7fragtnetværk, giver den dig mulighed for at'
+  - '&7fjerninteragere med alle genstande leveret af'
+  - '&7noder indstillet til ChestTerminal-kanalen'
+  name: '&3CT-adgangsterminal'
   type:
   - '&7&oMaskine'
 CT_EXPORT_BUS:
+  description:
+  - '&7Hvis denne blok er forbundet til et'
+  - '&7fragtnetværk, trækker den alle genstande fra'
+  - '&7CT-netværkskanalen og lægger dem'
+  - '&7ind i det inventar, den er koblet til'
+  name: '&3CT-eksportbus'
   type:
   - '&7&oMaskine'
 CT_IMPORT_BUS:
+  description:
+  - '&7Hvis denne blok er forbundet til et'
+  - '&7fragtnetværk, trækker den alle genstande fra'
+  - '&7det inventar, den er koblet til, og lægger dem'
+  - '&7ind i CT-netværkskanalen'
+  name: '&3CT-importbus'
   type:
   - '&7&oMaskine'
 CT_PANEL:
+  name: '&3CT oplyst panel'
   type:
   - '&7&oKomponent'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Hvis denne blok er forbundet til en adgangsterminal'
+  - '&7kan den få fjernadgang til den terminal'
+  name: '&3CT trådløs adgangsterminal &b(128)'
+  stats:
+  - '&8⇨ &7Rækkevidde: &e128 blokke'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eHøjreklik på en adgangsterminal &7for at forbinde'
+  - '&eHøjreklik&7 for at åbne den forbundne terminal'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Hvis denne blok er forbundet til en adgangsterminal'
+  - '&7kan den få fjernadgang til den terminal'
+  name: '&3CT trådløs adgangsterminal &b(16)'
+  stats:
+  - '&8⇨ &7Rækkevidde: &e16 blokke'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eHøjreklik på en adgangsterminal &7for at forbinde'
+  - '&eHøjreklik&7 for at åbne den forbundne terminal'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Hvis denne blok er forbundet til en adgangsterminal'
+  - '&7kan den få fjernadgang til den terminal'
+  name: '&3CT trådløs adgangsterminal &b(64)'
+  stats:
+  - '&8⇨ &7Rækkevidde: &e64 blokke'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eHøjreklik på en adgangsterminal &7for at forbinde'
+  - '&eHøjreklik&7 for at åbne den forbundne terminal'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Hvis denne blok er forbundet til en adgangsterminal'
+  - '&7kan den få fjernadgang til den terminal'
+  name: '&3CT trådløs adgangsterminal &b(Transdimensionel)'
+  stats:
+  - '&8⇨ &7Rækkevidde: &eUbegrænset'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eHøjreklik på en adgangsterminal &7for at forbinde'
+  - '&eHøjreklik&7 for at åbne den forbundne terminal'
 MILKY_QUARTZ:
+  name: '&fMælkehvid kvarts'
   type:
   - '&7&oRessource'
