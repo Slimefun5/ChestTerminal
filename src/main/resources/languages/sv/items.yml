@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Om detta block är anslutet till ett'
+  - '&7lastnätverk låter det dig på distans'
+  - '&7interagera med alla föremål som levereras av'
+  - '&7noder inställda på ChestTerminal-kanalen'
+  name: '&3CT åtkomstterminal'
   type:
   - '&7&oMaskin'
 CT_EXPORT_BUS:
+  description:
+  - '&7Om detta block är anslutet till ett'
+  - '&7lastnätverk drar det alla föremål från'
+  - '&7CT-nätverkskanalen och lägger dessa'
+  - '&7i inventariet det är kopplat till'
+  name: '&3CT exportbuss'
   type:
   - '&7&oMaskin'
 CT_IMPORT_BUS:
+  description:
+  - '&7Om detta block är anslutet till ett'
+  - '&7lastnätverk drar det alla föremål från'
+  - '&7inventariet det är kopplat till och lägger dem'
+  - '&7i CT-nätverkskanalen'
+  name: '&3CT importbuss'
   type:
   - '&7&oMaskin'
 CT_PANEL:
+  name: '&3CT upplyst panel'
   type:
   - '&7&oKomponent'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Om detta block är länkat till en åtkomstterminal'
+  - '&7kan det nå den terminalen på distans'
+  name: '&3CT trådlös åtkomstterminal &b(128)'
+  stats:
+  - '&8⇨ &7Räckvidd: &e128 block'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oPryl'
+  usage:
+  - '&eHögerklicka på en åtkomstterminal &7för att länka'
+  - '&eHögerklicka&7 för att öppna den länkade terminalen'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Om detta block är länkat till en åtkomstterminal'
+  - '&7kan det nå den terminalen på distans'
+  name: '&3CT trådlös åtkomstterminal &b(16)'
+  stats:
+  - '&8⇨ &7Räckvidd: &e16 block'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oPryl'
+  usage:
+  - '&eHögerklicka på en åtkomstterminal &7för att länka'
+  - '&eHögerklicka&7 för att öppna den länkade terminalen'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Om detta block är länkat till en åtkomstterminal'
+  - '&7kan det nå den terminalen på distans'
+  name: '&3CT trådlös åtkomstterminal &b(64)'
+  stats:
+  - '&8⇨ &7Räckvidd: &e64 block'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oPryl'
+  usage:
+  - '&eHögerklicka på en åtkomstterminal &7för att länka'
+  - '&eHögerklicka&7 för att öppna den länkade terminalen'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Om detta block är länkat till en åtkomstterminal'
+  - '&7kan det nå den terminalen på distans'
+  name: '&3CT trådlös åtkomstterminal &b(Transdimensionell)'
+  stats:
+  - '&8⇨ &7Räckvidd: &eObegränsad'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oPryl'
+  usage:
+  - '&eHögerklicka på en åtkomstterminal &7för att länka'
+  - '&eHögerklicka&7 för att öppna den länkade terminalen'
 MILKY_QUARTZ:
+  name: '&fMjölkig kvarts'
   type:
   - '&7&oRåmaterial'
