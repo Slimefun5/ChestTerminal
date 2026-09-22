@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Jika Blok ini terhubung ke'
+  - '&7Jaringan Kargo, kamu dapat dari jarak jauh'
+  - '&7berinteraksi dengan Item apa pun yang dipasok oleh'
+  - '&7Simpul yang disetel ke Saluran ChestTerminal'
+  name: '&3Terminal Akses CT'
   type:
   - '&7&oMesin'
 CT_EXPORT_BUS:
+  description:
+  - '&7Jika Blok ini terhubung ke'
+  - '&7Jaringan Kargo, ia akan menarik Item apa pun dari'
+  - '&7Saluran Jaringan CT dan meletakkan semuanya'
+  - '&7ke dalam Inventaris tempatnya terpasang'
+  name: '&3Bus Ekspor CT'
   type:
   - '&7&oMesin'
 CT_IMPORT_BUS:
+  description:
+  - '&7Jika Blok ini terhubung ke'
+  - '&7Jaringan Kargo, ia akan menarik Item apa pun dari'
+  - '&7Inventaris tempatnya terpasang dan meletakkannya'
+  - '&7ke dalam Saluran Jaringan CT'
+  name: '&3Bus Impor CT'
   type:
   - '&7&oMesin'
 CT_PANEL:
+  name: '&3Panel Bercahaya CT'
   type:
   - '&7&oKomponen'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Jika Blok ini tertaut ke sebuah Terminal Akses'
+  - '&7ia akan bisa mengakses Terminal itu dari jarak jauh'
+  name: '&3Terminal Akses Nirkabel CT &b(128)'
+  stats:
+  - '&8⇨ &7Jangkauan: &e128 Blok'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eKlik Kanan pada Terminal Akses &7untuk menautkan'
+  - '&eKlik Kanan&7 untuk membuka Terminal yang tertaut'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Jika Blok ini tertaut ke sebuah Terminal Akses'
+  - '&7ia akan bisa mengakses Terminal itu dari jarak jauh'
+  name: '&3Terminal Akses Nirkabel CT &b(16)'
+  stats:
+  - '&8⇨ &7Jangkauan: &e16 Blok'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eKlik Kanan pada Terminal Akses &7untuk menautkan'
+  - '&eKlik Kanan&7 untuk membuka Terminal yang tertaut'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Jika Blok ini tertaut ke sebuah Terminal Akses'
+  - '&7ia akan bisa mengakses Terminal itu dari jarak jauh'
+  name: '&3Terminal Akses Nirkabel CT &b(64)'
+  stats:
+  - '&8⇨ &7Jangkauan: &e64 Blok'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eKlik Kanan pada Terminal Akses &7untuk menautkan'
+  - '&eKlik Kanan&7 untuk membuka Terminal yang tertaut'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Jika Blok ini tertaut ke sebuah Terminal Akses'
+  - '&7ia akan bisa mengakses Terminal itu dari jarak jauh'
+  name: '&3Terminal Akses Nirkabel CT &b(Lintas Dimensi)'
+  stats:
+  - '&8⇨ &7Jangkauan: &eTak Terbatas'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eKlik Kanan pada Terminal Akses &7untuk menautkan'
+  - '&eKlik Kanan&7 untuk membuka Terminal yang tertaut'
 MILKY_QUARTZ:
+  name: '&fKuarsa Susu'
   type:
   - '&7&oSumber Daya'
