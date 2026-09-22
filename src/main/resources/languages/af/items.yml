@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7As hierdie Blok aan ''n'
+  - '&7Vragnetwerk gekoppel is, kan jy op afstand'
+  - '&7met enige Items werk wat verskaf word deur'
+  - '&7Nodusse wat op die ChestTerminal-kanaal ingestel is'
+  name: '&3CT Toegangsterminaal'
   type:
   - '&7&oMasjien'
 CT_EXPORT_BUS:
+  description:
+  - '&7As hierdie Blok aan ''n'
+  - '&7Vragnetwerk gekoppel is, sal dit enige Items trek uit'
+  - '&7die CT-netwerkkanaal trek en dit'
+  - '&7in die Inventaris plaas waaraan dit geheg is'
+  name: '&3CT Uitvoerbus'
   type:
   - '&7&oMasjien'
 CT_IMPORT_BUS:
+  description:
+  - '&7As hierdie Blok aan ''n'
+  - '&7Vragnetwerk gekoppel is, sal dit enige Items trek uit'
+  - '&7die Inventaris waaraan dit geheg is en dit'
+  - '&7in die CT-netwerkkanaal plaas'
+  name: '&3CT Invoerbus'
   type:
   - '&7&oMasjien'
 CT_PANEL:
+  name: '&3CT Verligte Paneel'
   type:
   - '&7&oKomponent'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7As hierdie Blok aan ''n Toegangsterminaal gekoppel is'
+  - '&7sal dit daardie Terminaal op afstand kan bereik'
+  name: '&3CT Draadlose Toegangsterminaal &b(128)'
+  stats:
+  - '&8⇨ &7Bereik: &e128 Blokke'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oToestel'
+  usage:
+  - '&eRegsklik op ''n Toegangsterminaal &7om te koppel'
+  - '&eRegsklik&7 om die gekoppelde Terminaal oop te maak'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7As hierdie Blok aan ''n Toegangsterminaal gekoppel is'
+  - '&7sal dit daardie Terminaal op afstand kan bereik'
+  name: '&3CT Draadlose Toegangsterminaal &b(16)'
+  stats:
+  - '&8⇨ &7Bereik: &e16 Blokke'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oToestel'
+  usage:
+  - '&eRegsklik op ''n Toegangsterminaal &7om te koppel'
+  - '&eRegsklik&7 om die gekoppelde Terminaal oop te maak'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7As hierdie Blok aan ''n Toegangsterminaal gekoppel is'
+  - '&7sal dit daardie Terminaal op afstand kan bereik'
+  name: '&3CT Draadlose Toegangsterminaal &b(64)'
+  stats:
+  - '&8⇨ &7Bereik: &e64 Blokke'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oToestel'
+  usage:
+  - '&eRegsklik op ''n Toegangsterminaal &7om te koppel'
+  - '&eRegsklik&7 om die gekoppelde Terminaal oop te maak'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7As hierdie Blok aan ''n Toegangsterminaal gekoppel is'
+  - '&7sal dit daardie Terminaal op afstand kan bereik'
+  name: '&3CT Draadlose Toegangsterminaal &b(Transdimensioneel)'
+  stats:
+  - '&8⇨ &7Bereik: &eOnbeperk'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oToestel'
+  usage:
+  - '&eRegsklik op ''n Toegangsterminaal &7om te koppel'
+  - '&eRegsklik&7 om die gekoppelde Terminaal oop te maak'
 MILKY_QUARTZ:
+  name: '&fMelkerige Kwarts'
   type:
   - '&7&oHulpbron'
