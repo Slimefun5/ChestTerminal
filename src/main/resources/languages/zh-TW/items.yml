@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7若此方塊連接到'
+  - '&7貨物網路，它將允許你遠端'
+  - '&7操作由調整至 ChestTerminal 頻道的'
+  - '&7節點所提供的任何物品'
+  name: '&3CT 存取終端機'
   type:
   - '&7&o機器'
 CT_EXPORT_BUS:
+  description:
+  - '&7若此方塊連接到'
+  - '&7貨物網路，它會拉取任何物品，來源是'
+  - '&7CT 網路頻道，並將這些物品放入'
+  - '&7它所連接的物品欄'
+  name: '&3CT 匯出匯流排'
   type:
   - '&7&o機器'
 CT_IMPORT_BUS:
+  description:
+  - '&7若此方塊連接到'
+  - '&7貨物網路，它會拉取任何物品，來源是'
+  - '&7它所連接的物品欄，並將其放入'
+  - '&7CT 網路頻道'
+  name: '&3CT 匯入匯流排'
   type:
   - '&7&o機器'
 CT_PANEL:
+  name: '&3CT 發光板'
   type:
   - '&7&o元件'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7若此方塊連結至某個存取終端機'
+  - '&7它將能夠遠端存取該終端機'
+  name: '&3CT 無線存取終端機 &b(128)'
+  stats:
+  - '&8⇨ &7範圍: &e128 方塊'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e右鍵點擊存取終端機 &7以建立連結'
+  - '&e右鍵點擊&7 以開啟已連結的終端機'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7若此方塊連結至某個存取終端機'
+  - '&7它將能夠遠端存取該終端機'
+  name: '&3CT 無線存取終端機 &b(16)'
+  stats:
+  - '&8⇨ &7範圍: &e16 方塊'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e右鍵點擊存取終端機 &7以建立連結'
+  - '&e右鍵點擊&7 以開啟已連結的終端機'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7若此方塊連結至某個存取終端機'
+  - '&7它將能夠遠端存取該終端機'
+  name: '&3CT 無線存取終端機 &b(64)'
+  stats:
+  - '&8⇨ &7範圍: &e64 方塊'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e右鍵點擊存取終端機 &7以建立連結'
+  - '&e右鍵點擊&7 以開啟已連結的終端機'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7若此方塊連結至某個存取終端機'
+  - '&7它將能夠遠端存取該終端機'
+  name: '&3CT 無線存取終端機 &b(跨維度)'
+  stats:
+  - '&8⇨ &7範圍: &e無限制'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e右鍵點擊存取終端機 &7以建立連結'
+  - '&e右鍵點擊&7 以開啟已連結的終端機'
 MILKY_QUARTZ:
+  name: '&f乳白石英'
   type:
   - '&7&o資源'
