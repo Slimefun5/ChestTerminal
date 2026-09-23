@@ -1,12 +1,27 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Wenn dieser Block mit einem'
+  - '&7Cargo-Netzwerk verbunden ist, kannst du aus der Ferne'
+  - '&7auf alle Gegenstände zugreifen, die von'
+  - '&7Knoten im ChestTerminal-Kanal geliefert werden'
   name: '&3CT Zugriffsterminal'
   type:
   - '&7&oMaschine'
 CT_EXPORT_BUS:
+  description:
+  - '&7Wenn dieser Block mit einem'
+  - '&7Cargo-Netzwerk verbunden ist, zieht er alle Gegenstände aus'
+  - '&7dem CT-Netzwerkkanal und legt sie'
+  - '&7in das Inventar, an dem er hängt'
   name: '&3CT Export-Bus'
   type:
   - '&7&oMaschine'
 CT_IMPORT_BUS:
+  description:
+  - '&7Wenn dieser Block mit einem'
+  - '&7Cargo-Netzwerk verbunden ist, zieht er alle Gegenstände aus'
+  - '&7dem Inventar, an dem er hängt, und legt sie'
+  - '&7in den CT-Netzwerkkanal'
   name: '&3CT Import-Bus'
   type:
   - '&7&oMaschine'
@@ -15,21 +30,57 @@ CT_PANEL:
   type:
   - '&7&oKomponente'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Wenn dieser Block mit einem Zugriffsterminal verbunden ist,'
+  - '&7kann er aus der Ferne auf dieses Terminal zugreifen'
   name: '&3CT Drahtloses Zugriffsterminal &b(128)'
+  stats:
+  - '&8⇨ &7Reichweite: &e128 Blöcke'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eRechtsklick auf ein Zugriffsterminal &7zum Verbinden'
+  - '&eRechtsklick&7 zum Öffnen des verbundenen Terminals'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Wenn dieser Block mit einem Zugriffsterminal verbunden ist,'
+  - '&7kann er aus der Ferne auf dieses Terminal zugreifen'
   name: '&3CT Drahtloses Zugriffsterminal &b(16)'
+  stats:
+  - '&8⇨ &7Reichweite: &e16 Blöcke'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eRechtsklick auf ein Zugriffsterminal &7zum Verbinden'
+  - '&eRechtsklick&7 zum Öffnen des verbundenen Terminals'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Wenn dieser Block mit einem Zugriffsterminal verbunden ist,'
+  - '&7kann er aus der Ferne auf dieses Terminal zugreifen'
   name: '&3CT Drahtloses Zugriffsterminal &b(64)'
+  stats:
+  - '&8⇨ &7Reichweite: &e64 Blöcke'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eRechtsklick auf ein Zugriffsterminal &7zum Verbinden'
+  - '&eRechtsklick&7 zum Öffnen des verbundenen Terminals'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Wenn dieser Block mit einem Zugriffsterminal verbunden ist,'
+  - '&7kann er aus der Ferne auf dieses Terminal zugreifen'
   name: '&3CT Drahtloses Zugriffsterminal &b(Transdimensional)'
+  stats:
+  - '&8⇨ &7Reichweite: &eUnbegrenzt'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eRechtsklick auf ein Zugriffsterminal &7zum Verbinden'
+  - '&eRechtsklick&7 zum Öffnen des verbundenen Terminals'
 MILKY_QUARTZ:
   name: '&fMilchiger Quarz'
   type:
