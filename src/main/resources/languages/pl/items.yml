@@ -1,12 +1,27 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Jeśli ten blok jest podłączony do'
+  - '&7sieci cargo, pozwoli ci zdalnie'
+  - '&7korzystać z przedmiotów dostarczanych przez'
+  - '&7węzły dostrojone do kanału ChestTerminal'
   name: '&3Terminal Dostępu CT'
   type:
   - '&7&oMaszyna'
 CT_EXPORT_BUS:
+  description:
+  - '&7Jeśli ten blok jest podłączony do'
+  - '&7sieci cargo, będzie pobierać przedmioty z'
+  - '&7kanału sieci CT i umieszczać je'
+  - '&7w ekwipunku, do którego jest podłączony'
   name: '&3Magistrala Eksportu CT'
   type:
   - '&7&oMaszyna'
 CT_IMPORT_BUS:
+  description:
+  - '&7Jeśli ten blok jest podłączony do'
+  - '&7sieci cargo, będzie pobierać przedmioty z'
+  - '&7ekwipunku, do którego jest podłączony, i umieszczać je'
+  - '&7w kanale sieci CT'
   name: '&3Magistrala Importu CT'
   type:
   - '&7&oMaszyna'
@@ -15,21 +30,57 @@ CT_PANEL:
   type:
   - '&7&oKomponent'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Jeśli ten blok jest połączony z terminalem dostępu'
+  - '&7będzie mógł zdalnie korzystać z tego terminalu'
   name: '&3Bezprzewodowy Terminal Dostępu CT &b(128)'
+  stats:
+  - '&8⇨ &7Zasięg: &e128 bloków'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadżet'
+  usage:
+  - '&eKliknij prawym na terminalu dostępu &7aby połączyć'
+  - '&eKliknij prawym&7 aby otworzyć połączony terminal'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Jeśli ten blok jest połączony z terminalem dostępu'
+  - '&7będzie mógł zdalnie korzystać z tego terminalu'
   name: '&3Bezprzewodowy Terminal Dostępu CT &b(16)'
+  stats:
+  - '&8⇨ &7Zasięg: &e16 bloków'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadżet'
+  usage:
+  - '&eKliknij prawym na terminalu dostępu &7aby połączyć'
+  - '&eKliknij prawym&7 aby otworzyć połączony terminal'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Jeśli ten blok jest połączony z terminalem dostępu'
+  - '&7będzie mógł zdalnie korzystać z tego terminalu'
   name: '&3Bezprzewodowy Terminal Dostępu CT &b(64)'
+  stats:
+  - '&8⇨ &7Zasięg: &e64 bloków'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadżet'
+  usage:
+  - '&eKliknij prawym na terminalu dostępu &7aby połączyć'
+  - '&eKliknij prawym&7 aby otworzyć połączony terminal'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Jeśli ten blok jest połączony z terminalem dostępu'
+  - '&7będzie mógł zdalnie korzystać z tego terminalu'
   name: '&3Bezprzewodowy Terminal Dostępu CT &b(Transwymiarowy)'
+  stats:
+  - '&8⇨ &7Zasięg: &eNieograniczony'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadżet'
+  usage:
+  - '&eKliknij prawym na terminalu dostępu &7aby połączyć'
+  - '&eKliknij prawym&7 aby otworzyć połączony terminal'
 MILKY_QUARTZ:
   name: '&fMleczny Kwarc'
   type:
