@@ -1,12 +1,27 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Si este bloque está conectado a una'
+  - '&7Red de Carga, te permitirá interactuar'
+  - '&7a distancia con los objetos suministrados por'
+  - '&7los nodos sintonizados al Canal ChestTerminal'
   name: '&3Terminal de Acceso CT'
   type:
   - '&7&oMáquina'
 CT_EXPORT_BUS:
+  description:
+  - '&7Si este bloque está conectado a una'
+  - '&7Red de Carga, extraerá los objetos de'
+  - '&7el Canal de Red CT y los colocará'
+  - '&7en el inventario al que está acoplado'
   name: '&3Bus de Exportación CT'
   type:
   - '&7&oMáquina'
 CT_IMPORT_BUS:
+  description:
+  - '&7Si este bloque está conectado a una'
+  - '&7Red de Carga, extraerá los objetos de'
+  - '&7el inventario al que está acoplado y los colocará'
+  - '&7en el Canal de Red CT'
   name: '&3Bus de Importación CT'
   type:
   - '&7&oMáquina'
@@ -15,21 +30,57 @@ CT_PANEL:
   type:
   - '&7&oComponente'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Si este bloque está vinculado a un Terminal de Acceso'
+  - '&7podrá acceder a ese Terminal a distancia'
   name: '&3Terminal de Acceso Inalámbrico CT &b(128)'
+  stats:
+  - '&8⇨ &7Alcance: &e128 Bloques'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oAparato'
+  usage:
+  - '&eClic derecho en un Terminal de Acceso &7para vincular'
+  - '&eClic derecho&7 para abrir el Terminal vinculado'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Si este bloque está vinculado a un Terminal de Acceso'
+  - '&7podrá acceder a ese Terminal a distancia'
   name: '&3Terminal de Acceso Inalámbrico CT &b(16)'
+  stats:
+  - '&8⇨ &7Alcance: &e16 Bloques'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oAparato'
+  usage:
+  - '&eClic derecho en un Terminal de Acceso &7para vincular'
+  - '&eClic derecho&7 para abrir el Terminal vinculado'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Si este bloque está vinculado a un Terminal de Acceso'
+  - '&7podrá acceder a ese Terminal a distancia'
   name: '&3Terminal de Acceso Inalámbrico CT &b(64)'
+  stats:
+  - '&8⇨ &7Alcance: &e64 Bloques'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oAparato'
+  usage:
+  - '&eClic derecho en un Terminal de Acceso &7para vincular'
+  - '&eClic derecho&7 para abrir el Terminal vinculado'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Si este bloque está vinculado a un Terminal de Acceso'
+  - '&7podrá acceder a ese Terminal a distancia'
   name: '&3Terminal de Acceso Inalámbrico CT &b(Transdimensional)'
+  stats:
+  - '&8⇨ &7Alcance: &eIlimitado'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oAparato'
+  usage:
+  - '&eClic derecho en un Terminal de Acceso &7para vincular'
+  - '&eClic derecho&7 para abrir el Terminal vinculado'
 MILKY_QUARTZ:
   name: '&fCuarzo Lechoso'
   type:
