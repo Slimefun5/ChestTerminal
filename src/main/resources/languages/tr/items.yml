@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Eğer bu Blok bir'
+  - '&7Kargo Ağına bağlıysa, uzaktan'
+  - '&7ChestTerminal Kanalına ayarlı Düğümlerin'
+  - '&7sunduğu tüm Eşyalarla etkileşmeni sağlar'
+  name: '&3CT Erişim Terminali'
   type:
   - '&7&oMakine'
 CT_EXPORT_BUS:
+  description:
+  - '&7Eğer bu Blok bir'
+  - '&7Kargo Ağına bağlıysa, tüm Eşyaları'
+  - '&7CT Ağ Kanalından çekip'
+  - '&7bağlı olduğu Envantere yerleştirir'
+  name: '&3CT Dışa Aktarım Yolu'
   type:
   - '&7&oMakine'
 CT_IMPORT_BUS:
+  description:
+  - '&7Eğer bu Blok bir'
+  - '&7Kargo Ağına bağlıysa, tüm Eşyaları'
+  - '&7bağlı olduğu Envanterden çekip'
+  - '&7CT Ağ Kanalına yerleştirir'
+  name: '&3CT İçe Aktarım Yolu'
   type:
   - '&7&oMakine'
 CT_PANEL:
+  name: '&3CT Işıklı Panel'
   type:
   - '&7&oBileşen'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Eğer bu Blok bir Erişim Terminaline bağlıysa'
+  - '&7o Terminale uzaktan erişebilecek'
+  name: '&3CT Kablosuz Erişim Terminali &b(128)'
+  stats:
+  - '&8⇨ &7Menzil: &e128 Blok'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oCihaz'
+  usage:
+  - '&eErişim Terminaline Sağ Tık &7ile bağla'
+  - '&eSağ Tık&7 ile bağlı Terminali aç'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Eğer bu Blok bir Erişim Terminaline bağlıysa'
+  - '&7o Terminale uzaktan erişebilecek'
+  name: '&3CT Kablosuz Erişim Terminali &b(16)'
+  stats:
+  - '&8⇨ &7Menzil: &e16 Blok'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oCihaz'
+  usage:
+  - '&eErişim Terminaline Sağ Tık &7ile bağla'
+  - '&eSağ Tık&7 ile bağlı Terminali aç'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Eğer bu Blok bir Erişim Terminaline bağlıysa'
+  - '&7o Terminale uzaktan erişebilecek'
+  name: '&3CT Kablosuz Erişim Terminali &b(64)'
+  stats:
+  - '&8⇨ &7Menzil: &e64 Blok'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oCihaz'
+  usage:
+  - '&eErişim Terminaline Sağ Tık &7ile bağla'
+  - '&eSağ Tık&7 ile bağlı Terminali aç'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Eğer bu Blok bir Erişim Terminaline bağlıysa'
+  - '&7o Terminale uzaktan erişebilecek'
+  name: '&3CT Kablosuz Erişim Terminali &b(Boyutlar Arası)'
+  stats:
+  - '&8⇨ &7Menzil: &eSınırsız'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oCihaz'
+  usage:
+  - '&eErişim Terminaline Sağ Tık &7ile bağla'
+  - '&eSağ Tık&7 ile bağlı Terminali aç'
 MILKY_QUARTZ:
+  name: '&fSütlü Kuvars'
   type:
   - '&7&oKaynak'
