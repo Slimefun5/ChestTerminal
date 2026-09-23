@@ -1,12 +1,27 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Si ce bloc est connecté à un'
+  - '&7Réseau cargo, il vous permettra d''interagir'
+  - '&7à distance avec les objets fournis par'
+  - '&7les nœuds réglés sur le canal ChestTerminal'
   name: '&3Terminal d''Accès CT'
   type:
   - '&7&oMachine'
 CT_EXPORT_BUS:
+  description:
+  - '&7Si ce bloc est connecté à un'
+  - '&7Réseau cargo, il extraira les objets depuis'
+  - '&7le canal réseau CT et les placera'
+  - '&7dans l''inventaire auquel il est attaché'
   name: '&3Bus d''Exportation CT'
   type:
   - '&7&oMachine'
 CT_IMPORT_BUS:
+  description:
+  - '&7Si ce bloc est connecté à un'
+  - '&7Réseau cargo, il extraira les objets depuis'
+  - '&7l''inventaire auquel il est attaché et les placera'
+  - '&7dans le canal réseau CT'
   name: '&3Bus d''Importation CT'
   type:
   - '&7&oMachine'
@@ -15,21 +30,57 @@ CT_PANEL:
   type:
   - '&7&oComposant'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Si ce bloc est lié à un Terminal d''accès'
+  - '&7il pourra accéder à ce Terminal à distance'
   name: '&3Terminal d''Accès Sans Fil CT &b(128)'
+  stats:
+  - '&8⇨ &7Portée : &e128 blocs'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic droit sur un Terminal d''accès &7pour lier'
+  - '&eClic droit&7 pour ouvrir le Terminal lié'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Si ce bloc est lié à un Terminal d''accès'
+  - '&7il pourra accéder à ce Terminal à distance'
   name: '&3Terminal d''Accès Sans Fil CT &b(16)'
+  stats:
+  - '&8⇨ &7Portée : &e16 blocs'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic droit sur un Terminal d''accès &7pour lier'
+  - '&eClic droit&7 pour ouvrir le Terminal lié'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Si ce bloc est lié à un Terminal d''accès'
+  - '&7il pourra accéder à ce Terminal à distance'
   name: '&3Terminal d''Accès Sans Fil CT &b(64)'
+  stats:
+  - '&8⇨ &7Portée : &e64 blocs'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic droit sur un Terminal d''accès &7pour lier'
+  - '&eClic droit&7 pour ouvrir le Terminal lié'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Si ce bloc est lié à un Terminal d''accès'
+  - '&7il pourra accéder à ce Terminal à distance'
   name: '&3Terminal d''Accès Sans Fil CT &b(Transdimensionnel)'
+  stats:
+  - '&8⇨ &7Portée : &eIllimitée'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic droit sur un Terminal d''accès &7pour lier'
+  - '&eClic droit&7 pour ouvrir le Terminal lié'
 MILKY_QUARTZ:
   name: '&fQuartz Laiteux'
   type:
