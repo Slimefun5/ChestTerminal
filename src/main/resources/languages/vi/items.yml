@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Nếu Khối này được kết nối với một'
+  - '&7Mạng Hàng hóa, nó sẽ cho phép bạn từ xa'
+  - '&7tương tác với mọi Vật phẩm được cung cấp bởi'
+  - '&7các Nút đã điều chỉnh vào Kênh ChestTerminal'
+  name: '&3Trạm Truy cập CT'
   type:
   - '&7&oMáy Móc'
 CT_EXPORT_BUS:
+  description:
+  - '&7Nếu Khối này được kết nối với một'
+  - '&7Mạng Hàng hóa, nó sẽ lấy mọi Vật phẩm từ'
+  - '&7Kênh Mạng CT và đặt những thứ này'
+  - '&7vào Túi đồ mà nó gắn vào'
+  name: '&3Cổng Xuất CT'
   type:
   - '&7&oMáy Móc'
 CT_IMPORT_BUS:
+  description:
+  - '&7Nếu Khối này được kết nối với một'
+  - '&7Mạng Hàng hóa, nó sẽ lấy mọi Vật phẩm từ'
+  - '&7Túi đồ mà nó gắn vào và đặt chúng'
+  - '&7vào Kênh Mạng CT'
+  name: '&3Cổng Nhập CT'
   type:
   - '&7&oMáy Móc'
 CT_PANEL:
+  name: '&3Bảng Phát sáng CT'
   type:
   - '&7&oThành Phần'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Nếu Khối này được liên kết với một Trạm Truy cập'
+  - '&7nó sẽ có thể truy cập Trạm đó từ xa'
+  name: '&3Trạm Truy cập Không dây CT &b(128)'
+  stats:
+  - '&8⇨ &7Phạm vi: &e128 Khối'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oThiết Bị'
+  usage:
+  - '&eChuột phải vào một Trạm Truy cập &7để liên kết'
+  - '&eChuột phải&7 để mở Trạm đã liên kết'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Nếu Khối này được liên kết với một Trạm Truy cập'
+  - '&7nó sẽ có thể truy cập Trạm đó từ xa'
+  name: '&3Trạm Truy cập Không dây CT &b(16)'
+  stats:
+  - '&8⇨ &7Phạm vi: &e16 Khối'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oThiết Bị'
+  usage:
+  - '&eChuột phải vào một Trạm Truy cập &7để liên kết'
+  - '&eChuột phải&7 để mở Trạm đã liên kết'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Nếu Khối này được liên kết với một Trạm Truy cập'
+  - '&7nó sẽ có thể truy cập Trạm đó từ xa'
+  name: '&3Trạm Truy cập Không dây CT &b(64)'
+  stats:
+  - '&8⇨ &7Phạm vi: &e64 Khối'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oThiết Bị'
+  usage:
+  - '&eChuột phải vào một Trạm Truy cập &7để liên kết'
+  - '&eChuột phải&7 để mở Trạm đã liên kết'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Nếu Khối này được liên kết với một Trạm Truy cập'
+  - '&7nó sẽ có thể truy cập Trạm đó từ xa'
+  name: '&3Trạm Truy cập Không dây CT &b(Liên chiều)'
+  stats:
+  - '&8⇨ &7Phạm vi: &eKhông giới hạn'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oThiết Bị'
+  usage:
+  - '&eChuột phải vào một Trạm Truy cập &7để liên kết'
+  - '&eChuột phải&7 để mở Trạm đã liên kết'
 MILKY_QUARTZ:
+  name: '&fThạch anh Sữa'
   type:
   - '&7&oTài Nguyên'
