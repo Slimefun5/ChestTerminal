@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Ha ez a Blokk csatlakoztatva van egy'
+  - '&7Teherhálózathoz, lehetővé teszi, hogy távolról'
+  - '&7interakcióba lépj bármely Tárggyal, amit'
+  - '&7a ChestTerminal Csatornára hangolt Csomópontok adnak'
+  name: '&3CT Hozzáférési Terminál'
   type:
   - '&7&oGép'
 CT_EXPORT_BUS:
+  description:
+  - '&7Ha ez a Blokk csatlakoztatva van egy'
+  - '&7Teherhálózathoz, kihúz minden Tárgyat'
+  - '&7a CT Hálózati Csatornából, és ezeket beteszi'
+  - '&7abba a Leltárba, amelyhez csatolva van'
+  name: '&3CT Exportáló Busz'
   type:
   - '&7&oGép'
 CT_IMPORT_BUS:
+  description:
+  - '&7Ha ez a Blokk csatlakoztatva van egy'
+  - '&7Teherhálózathoz, kihúz minden Tárgyat'
+  - '&7abból a Leltárból, amelyhez csatolva van, és beteszi'
+  - '&7a CT Hálózati Csatornába'
+  name: '&3CT Importáló Busz'
   type:
   - '&7&oGép'
 CT_PANEL:
+  name: '&3CT Megvilágított Panel'
   type:
   - '&7&oAlkatrész'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Ha ez a Blokk össze van kapcsolva egy Hozzáférési Terminállal'
+  - '&7távolról hozzáférhet ahhoz a Terminálhoz'
+  name: '&3CT Vezeték nélküli Hozzáférési Terminál &b(128)'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e128 Blokk'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oKütyü'
+  usage:
+  - '&eJobb Klikk egy Hozzáférési Terminálra &7az összekapcsoláshoz'
+  - '&eJobb Klikk&7 az összekapcsolt Terminál megnyitásához'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Ha ez a Blokk össze van kapcsolva egy Hozzáférési Terminállal'
+  - '&7távolról hozzáférhet ahhoz a Terminálhoz'
+  name: '&3CT Vezeték nélküli Hozzáférési Terminál &b(16)'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e16 Blokk'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oKütyü'
+  usage:
+  - '&eJobb Klikk egy Hozzáférési Terminálra &7az összekapcsoláshoz'
+  - '&eJobb Klikk&7 az összekapcsolt Terminál megnyitásához'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Ha ez a Blokk össze van kapcsolva egy Hozzáférési Terminállal'
+  - '&7távolról hozzáférhet ahhoz a Terminálhoz'
+  name: '&3CT Vezeték nélküli Hozzáférési Terminál &b(64)'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e64 Blokk'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oKütyü'
+  usage:
+  - '&eJobb Klikk egy Hozzáférési Terminálra &7az összekapcsoláshoz'
+  - '&eJobb Klikk&7 az összekapcsolt Terminál megnyitásához'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Ha ez a Blokk össze van kapcsolva egy Hozzáférési Terminállal'
+  - '&7távolról hozzáférhet ahhoz a Terminálhoz'
+  name: '&3CT Vezeték nélküli Hozzáférési Terminál &b(Dimenzióközi)'
+  stats:
+  - '&8⇨ &7Hatótávolság: &eKorlátlan'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oKütyü'
+  usage:
+  - '&eJobb Klikk egy Hozzáférési Terminálra &7az összekapcsoláshoz'
+  - '&eJobb Klikk&7 az összekapcsolt Terminál megnyitásához'
 MILKY_QUARTZ:
+  name: '&fTejes Kvarc'
   type:
   - '&7&oNyersanyag'
