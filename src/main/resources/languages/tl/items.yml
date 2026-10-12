@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Kung ang Bloke na ito ay nakakonekta sa'
+  - '&7Network ng Kargamento, mapapayagan ka nitong'
+  - '&7makipag-ugnayan nang malayuan sa mga Bagay na'
+  - '&7ibinibigay ng mga Nodo na nakatutok sa Kanal ng ChestTerminal'
+  name: '&3CT Terminal ng Akses'
   type:
   - '&7&oMakina'
 CT_EXPORT_BUS:
+  description:
+  - '&7Kung ang Bloke na ito ay nakakonekta sa'
+  - '&7Network ng Kargamento, hihigupin nito ang mga Bagay mula sa'
+  - '&7Kanal ng CT Network at ilalagay ang mga ito'
+  - '&7sa Imbentaryong nakakabit dito'
+  name: '&3CT Bus ng Paglabas'
   type:
   - '&7&oMakina'
 CT_IMPORT_BUS:
+  description:
+  - '&7Kung ang Bloke na ito ay nakakonekta sa'
+  - '&7Network ng Kargamento, hihigupin nito ang mga Bagay mula sa'
+  - '&7Imbentaryong nakakabit dito at ilalagay ito'
+  - '&7sa Kanal ng CT Network'
+  name: '&3CT Bus ng Pagpasok'
   type:
   - '&7&oMakina'
 CT_PANEL:
+  name: '&3CT Nagliliwanag na Panel'
   type:
   - '&7&oBahagi'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Kung ang Bloke na ito ay naka-ugnay sa Terminal ng Akses'
+  - '&7magagamit nito nang malayuan ang Terminal na iyon'
+  name: '&3CT Terminal ng Akses na Walang Kable &b(128)'
+  stats:
+  - '&8⇨ &7Abot: &e128 Bloke'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadyet'
+  usage:
+  - '&eKanang Pindot sa Terminal ng Akses &7para ugnayin'
+  - '&eKanang Pindot&7 para buksan ang naka-ugnay na Terminal'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Kung ang Bloke na ito ay naka-ugnay sa Terminal ng Akses'
+  - '&7magagamit nito nang malayuan ang Terminal na iyon'
+  name: '&3CT Terminal ng Akses na Walang Kable &b(16)'
+  stats:
+  - '&8⇨ &7Abot: &e16 Bloke'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadyet'
+  usage:
+  - '&eKanang Pindot sa Terminal ng Akses &7para ugnayin'
+  - '&eKanang Pindot&7 para buksan ang naka-ugnay na Terminal'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Kung ang Bloke na ito ay naka-ugnay sa Terminal ng Akses'
+  - '&7magagamit nito nang malayuan ang Terminal na iyon'
+  name: '&3CT Terminal ng Akses na Walang Kable &b(64)'
+  stats:
+  - '&8⇨ &7Abot: &e64 Bloke'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadyet'
+  usage:
+  - '&eKanang Pindot sa Terminal ng Akses &7para ugnayin'
+  - '&eKanang Pindot&7 para buksan ang naka-ugnay na Terminal'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Kung ang Bloke na ito ay naka-ugnay sa Terminal ng Akses'
+  - '&7magagamit nito nang malayuan ang Terminal na iyon'
+  name: '&3CT Terminal ng Akses na Walang Kable &b(Transdimensyonal)'
+  stats:
+  - '&8⇨ &7Abot: &eWalang Hangganan'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadyet'
+  usage:
+  - '&eKanang Pindot sa Terminal ng Akses &7para ugnayin'
+  - '&eKanang Pindot&7 para buksan ang naka-ugnay na Terminal'
 MILKY_QUARTZ:
+  name: '&fMaputing Kuwarts'
   type:
   - '&7&oRekurso'
