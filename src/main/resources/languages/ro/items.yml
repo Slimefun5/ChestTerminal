@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Dacă acest bloc este conectat la o'
+  - '&7Rețea cargo, îți va permite să interacționezi'
+  - '&7de la distanță cu orice obiecte furnizate de'
+  - '&7nodurile acordate pe Canalul ChestTerminal'
+  name: '&3Terminal de Acces CT'
   type:
   - '&7&oMașină'
 CT_EXPORT_BUS:
+  description:
+  - '&7Dacă acest bloc este conectat la o'
+  - '&7Rețea cargo, va extrage orice obiecte din'
+  - '&7Canalul Rețelei CT și le va plasa'
+  - '&7în inventarul de care este atașată'
+  name: '&3Magistrală de Export CT'
   type:
   - '&7&oMașină'
 CT_IMPORT_BUS:
+  description:
+  - '&7Dacă acest bloc este conectat la o'
+  - '&7Rețea cargo, va extrage orice obiecte din'
+  - '&7inventarul de care este atașată și le va plasa'
+  - '&7în Canalul Rețelei CT'
+  name: '&3Magistrală de Import CT'
   type:
   - '&7&oMașină'
 CT_PANEL:
+  name: '&3Panou Iluminat CT'
   type:
   - '&7&oComponentă'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Dacă acest bloc este conectat la un Terminal de Acces'
+  - '&7va putea accesa de la distanță acel Terminal'
+  name: '&3Terminal de Acces CT Fără fir &b(128)'
+  stats:
+  - '&8⇨ &7Rază: &e128 Blocuri'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic dreapta pe un Terminal de Acces &7pentru a conecta'
+  - '&eClic dreapta&7 pentru a deschide Terminalul conectat'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Dacă acest bloc este conectat la un Terminal de Acces'
+  - '&7va putea accesa de la distanță acel Terminal'
+  name: '&3Terminal de Acces CT Fără fir &b(16)'
+  stats:
+  - '&8⇨ &7Rază: &e16 Blocuri'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic dreapta pe un Terminal de Acces &7pentru a conecta'
+  - '&eClic dreapta&7 pentru a deschide Terminalul conectat'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Dacă acest bloc este conectat la un Terminal de Acces'
+  - '&7va putea accesa de la distanță acel Terminal'
+  name: '&3Terminal de Acces CT Fără fir &b(64)'
+  stats:
+  - '&8⇨ &7Rază: &e64 Blocuri'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic dreapta pe un Terminal de Acces &7pentru a conecta'
+  - '&eClic dreapta&7 pentru a deschide Terminalul conectat'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Dacă acest bloc este conectat la un Terminal de Acces'
+  - '&7va putea accesa de la distanță acel Terminal'
+  name: '&3Terminal de Acces CT Fără fir &b(Transdimensional)'
+  stats:
+  - '&8⇨ &7Rază: &eNelimitată'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eClic dreapta pe un Terminal de Acces &7pentru a conecta'
+  - '&eClic dreapta&7 pentru a deschide Terminalul conectat'
 MILKY_QUARTZ:
+  name: '&fCuarț Lăptos'
   type:
   - '&7&oResursă'
