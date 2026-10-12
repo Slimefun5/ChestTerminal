@@ -1,27 +1,87 @@
 CHEST_TERMINAL:
+  description:
+  - '&7Jos tämä palikka on yhdistetty'
+  - '&7rahtiverkkoon, voit etäkäyttää'
+  - '&7mitä tahansa esineitä, joita tarjoavat'
+  - '&7ChestTerminal-kanavalle viritetyt solmut'
+  name: '&3CT-pääsyterminaali'
   type:
   - '&7&oKone'
 CT_EXPORT_BUS:
+  description:
+  - '&7Jos tämä palikka on yhdistetty'
+  - '&7rahtiverkkoon, se vetää esineitä'
+  - '&7CT-verkkokanavalta ja asettaa ne'
+  - '&7inventaarioon, johon se on kiinnitetty'
+  name: '&3CT-vientiväylä'
   type:
   - '&7&oKone'
 CT_IMPORT_BUS:
+  description:
+  - '&7Jos tämä palikka on yhdistetty'
+  - '&7rahtiverkkoon, se vetää esineitä'
+  - '&7inventaariosta, johon se on kiinnitetty, ja asettaa ne'
+  - '&7CT-verkkokanavalle'
+  name: '&3CT-tuontiväylä'
   type:
   - '&7&oKone'
 CT_PANEL:
+  name: '&3CT valaistu paneeli'
   type:
   - '&7&oKomponentti'
 CT_WIRELESS_ACCESS_TERMINAL_128:
+  description:
+  - '&7Jos tämä palikka on linkitetty pääsyterminaaliin'
+  - '&7se voi käyttää kyseistä terminaalia etänä'
+  name: '&3CT langaton pääsyterminaali &b(128)'
+  stats:
+  - '&8⇨ &7Kantama: &e128 palikkaa'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eNapsauta oikealla pääsyterminaalia &7linkittääksesi'
+  - '&eNapsauta oikealla&7 avataksesi linkitetyn terminaalin'
 CT_WIRELESS_ACCESS_TERMINAL_16:
+  description:
+  - '&7Jos tämä palikka on linkitetty pääsyterminaaliin'
+  - '&7se voi käyttää kyseistä terminaalia etänä'
+  name: '&3CT langaton pääsyterminaali &b(16)'
+  stats:
+  - '&8⇨ &7Kantama: &e16 palikkaa'
+  - '&8⇨ &e⚡ &710 J'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eNapsauta oikealla pääsyterminaalia &7linkittääksesi'
+  - '&eNapsauta oikealla&7 avataksesi linkitetyn terminaalin'
 CT_WIRELESS_ACCESS_TERMINAL_64:
+  description:
+  - '&7Jos tämä palikka on linkitetty pääsyterminaaliin'
+  - '&7se voi käyttää kyseistä terminaalia etänä'
+  name: '&3CT langaton pääsyterminaali &b(64)'
+  stats:
+  - '&8⇨ &7Kantama: &e64 palikkaa'
+  - '&8⇨ &e⚡ &725 J'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eNapsauta oikealla pääsyterminaalia &7linkittääksesi'
+  - '&eNapsauta oikealla&7 avataksesi linkitetyn terminaalin'
 CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL:
+  description:
+  - '&7Jos tämä palikka on linkitetty pääsyterminaaliin'
+  - '&7se voi käyttää kyseistä terminaalia etänä'
+  name: '&3CT langaton pääsyterminaali &b(Ulottuvuuksien välinen)'
+  stats:
+  - '&8⇨ &7Kantama: &eRajaton'
+  - '&8⇨ &e⚡ &750 J'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eNapsauta oikealla pääsyterminaalia &7linkittääksesi'
+  - '&eNapsauta oikealla&7 avataksesi linkitetyn terminaalin'
 MILKY_QUARTZ:
+  name: '&fMaitokvartsi'
   type:
   - '&7&oResurssi'
