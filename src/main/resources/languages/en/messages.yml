@@ -1,0 +1,8 @@
+terminal:
+  failed: "Failed"
+  link-established: "Link established!"
+  not-linked: "This Device has not been linked to a Chest Terminal!"
+  gone: "The Chest Terminal that this Device has been linked to no longer exists!"
+  no-energy: "You are out of Energy!"
+  out-of-range: "You are out of Range!"
+  no-permission: "You are not permitted to access this terminal in that area!"

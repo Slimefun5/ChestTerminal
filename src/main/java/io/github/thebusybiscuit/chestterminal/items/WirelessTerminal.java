@@ -7,6 +7,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -14,6 +15,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import io.github.thebusybiscuit.chestterminal.Messages;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
@@ -65,7 +67,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
 
                 if (e.getSlimefunBlock().get() instanceof AccessTerminal) {
                     lore.set(0, ChatColors.color("&8\u21E8 &7Linked to: &8") + b.getWorld().getName() + " X: " + b.getX() + " Y: " + b.getY() + " Z: " + b.getZ());
-                    p.sendMessage(ChatColors.color("&bLink established!"));
+                    Messages.send(p, ChatColor.AQUA, "terminal.link-established", "Link established!");
                     im.setLore(lore);
                     stack.setItemMeta(im);
                     setItemInHand(p, stack);
@@ -108,7 +110,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
 
     private void openRemoteTerminal(@Nonnull Player p, @Nonnull ItemStack stack, @Nonnull String loc, int range) {
         if (loc.equals(ChatColors.color("&8\u21E8 &7Linked to: &cNowhere"))) {
-            p.sendMessage(ChatColors.color("&4Failed &c- This Device has not been linked to a Chest Terminal!"));
+            Messages.sendFailure(p, "terminal.not-linked", "This Device has not been linked to a Chest Terminal!");
             return;
         }
 
@@ -116,7 +118,7 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
         World world = Bukkit.getWorld(loc.split(" X: ")[0]);
 
         if (world == null) {
-            p.sendMessage(ChatColors.color("&4Failed &c- The Chest Terminal that this Device has been linked to no longer exists!"));
+            Messages.sendFailure(p, "terminal.gone", "The Chest Terminal that this Device has been linked to no longer exists!");
             return;
         }
 
@@ -127,27 +129,27 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
         Block block = world.getBlockAt(x, y, z);
 
         if (!Slimefun.getProtectionManager().hasPermission(p, block.getLocation(), Interaction.INTERACT_BLOCK)) {
-            p.sendMessage(ChatColors.color("&4You are not permitted to access this terminal in that area!"));
+            Messages.send(p, ChatColor.DARK_RED, "terminal.no-permission", "You are not permitted to access this terminal in that area!");
             return;
         }
 
         if (!BlockStorage.check(block, "CHEST_TERMINAL")) {
-            p.sendMessage(ChatColors.color("&4Failed &c- The Chest Terminal that this Device has been linked to no longer exists!"));
+            Messages.sendFailure(p, "terminal.gone", "The Chest Terminal that this Device has been linked to no longer exists!");
             return;
         }
 
         float charge = getItemCharge(stack);
         if (charge < 0.5F) {
-            p.sendMessage(ChatColors.color("&4Failed &c- You are out of Energy!"));
+            Messages.sendFailure(p, "terminal.no-energy", "You are out of Energy!");
             return;
         }
 
         if (range > 0 && !world.getUID().equals(p.getWorld().getUID())) {
-            p.sendMessage(ChatColors.color("&4Failed &c- You are out of Range!"));
+            Messages.sendFailure(p, "terminal.out-of-range", "You are out of Range!");
             return;
         }
         if (range > 0 && block.getLocation().distance(p.getLocation()) > range) {
-            p.sendMessage(ChatColors.color("&4Failed &c- You are out of Range!"));
+            Messages.sendFailure(p, "terminal.out-of-range", "You are out of Range!");
             return;
         }
 
