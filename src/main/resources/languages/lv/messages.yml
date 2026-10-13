@@ -1,0 +1,8 @@
+terminal:
+  failed: "Neizdevās"
+  link-established: "Savienojums izveidots!"
+  not-linked: "Šī ierīce nav sasaistīta ne ar vienu CT piekļuves termināli!"
+  gone: "CT piekļuves terminālis, ar kuru bija sasaistīta šī ierīce, vairs neeksistē!"
+  no-energy: "Tev beidzās enerģija!"
+  out-of-range: "Tu esi ārpus darbības rādiusa!"
+  no-permission: "Tev nav atļauts izmantot šo termināli šajā apvidū!"

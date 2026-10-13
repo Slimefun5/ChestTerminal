@@ -1,0 +1,8 @@
+terminal:
+  failed: "Gagal"
+  link-established: "Pautan berjaya dibuat!"
+  not-linked: "Peranti ini belum dipautkan ke mana-mana Terminal Akses CT!"
+  gone: "Terminal Akses CT yang dipautkan kepada peranti ini sudah tiada!"
+  no-energy: "Tenaga anda sudah habis!"
+  out-of-range: "Anda berada di luar jangkauan!"
+  no-permission: "Anda tidak dibenarkan mengakses terminal ini di kawasan itu!"

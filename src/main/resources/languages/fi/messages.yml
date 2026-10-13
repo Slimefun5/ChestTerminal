@@ -1,0 +1,8 @@
+terminal:
+  failed: "Epäonnistui"
+  link-established: "Yhteys muodostettu!"
+  not-linked: "Tätä laitetta ei ole liitetty yhteenkään CT-pääsyterminaaliin!"
+  gone: "CT-pääsyterminaalia, johon tämä laite oli liitetty, ei ole enää!"
+  no-energy: "Energiasi loppui!"
+  out-of-range: "Olet kantaman ulkopuolella!"
+  no-permission: "Sinulla ei ole oikeutta käyttää tätä terminaalia tällä alueella!"

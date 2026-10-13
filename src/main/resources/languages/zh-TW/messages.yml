@@ -1,0 +1,8 @@
+terminal:
+  failed: "失敗"
+  link-established: "連線已建立！"
+  not-linked: "此裝置尚未連接到任何 CT 存取終端機！"
+  gone: "此裝置所連接的 CT 存取終端機已不存在！"
+  no-energy: "你的能量已耗盡！"
+  out-of-range: "你已超出範圍！"
+  no-permission: "你無權在該區域使用此終端機！"

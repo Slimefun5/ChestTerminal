@@ -1,0 +1,8 @@
+terminal:
+  failed: "Misluk"
+  link-established: "Skakel gevestig!"
+  not-linked: "Hierdie toestel is nie aan 'n CT Toegangsterminaal geskakel nie!"
+  gone: "Die CT Toegangsterminaal waaraan hierdie toestel geskakel was, bestaan nie meer nie!"
+  no-energy: "Jy het geen energie oor nie!"
+  out-of-range: "Jy is buite bereik!"
+  no-permission: "Jy mag nie hierdie terminaal in daardie gebied gebruik nie!"

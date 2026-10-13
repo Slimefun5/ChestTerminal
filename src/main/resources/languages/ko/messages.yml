@@ -1,0 +1,8 @@
+terminal:
+  failed: "실패"
+  link-established: "연결되었습니다!"
+  not-linked: "이 장치는 어떤 CT 접속 터미널에도 연결되어 있지 않습니다!"
+  gone: "이 장치가 연결되어 있던 CT 접속 터미널이 더 이상 존재하지 않습니다!"
+  no-energy: "에너지가 부족합니다!"
+  out-of-range: "범위를 벗어났습니다!"
+  no-permission: "그 지역에서는 이 터미널을 사용할 권한이 없습니다!"

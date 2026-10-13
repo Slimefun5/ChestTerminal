@@ -1,0 +1,8 @@
+terminal:
+  failed: "Misslyckades"
+  link-established: "Förbindelsen är upprättad!"
+  not-linked: "Den här enheten är inte länkad till någon CT åtkomstterminal!"
+  gone: "Den CT åtkomstterminal som enheten var länkad till finns inte längre!"
+  no-energy: "Du har slut på energi!"
+  out-of-range: "Du är utom räckhåll!"
+  no-permission: "Du får inte använda den här terminalen i det området!"

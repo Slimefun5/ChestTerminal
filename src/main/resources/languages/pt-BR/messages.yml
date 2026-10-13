@@ -1,0 +1,8 @@
+terminal:
+  failed: "Falhou"
+  link-established: "Conexão estabelecida!"
+  not-linked: "Este dispositivo não está conectado a nenhum Terminal de Acesso CT!"
+  gone: "O Terminal de Acesso CT ao qual este dispositivo estava conectado não existe mais!"
+  no-energy: "Você ficou sem energia!"
+  out-of-range: "Você está fora de alcance!"
+  no-permission: "Você não tem permissão para usar este terminal nessa área!"

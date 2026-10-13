@@ -1,0 +1,8 @@
+terminal:
+  failed: "Nepavyko"
+  link-established: "Ryšys sukurtas!"
+  not-linked: "Šis prietaisas nesusietas su jokiu CT prieigos terminalu!"
+  gone: "CT prieigos terminalo, su kuriuo buvo susietas šis prietaisas, nebėra!"
+  no-energy: "Tau pasibaigė energija!"
+  out-of-range: "Esi už veikimo zonos!"
+  no-permission: "Toje teritorijoje tau neleidžiama naudoti šio terminalo!"

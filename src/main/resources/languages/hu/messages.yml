@@ -1,0 +1,8 @@
+terminal:
+  failed: "Nem sikerült"
+  link-established: "A kapcsolat létrejött!"
+  not-linked: "Ez az eszköz nincs egyetlen CT Hozzáférési Terminálhoz sem kapcsolva!"
+  gone: "A CT Hozzáférési Terminál, amelyhez ez az eszköz kapcsolva volt, már nem létezik!"
+  no-energy: "Kifogyott az energiád!"
+  out-of-range: "Túl messze vagy!"
+  no-permission: "Ezen a területen nincs engedélyed használni ezt a terminált!"

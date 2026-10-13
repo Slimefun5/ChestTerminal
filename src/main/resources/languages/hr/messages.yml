@@ -1,0 +1,8 @@
+terminal:
+  failed: "Nije uspjelo"
+  link-established: "Veza je uspostavljena!"
+  not-linked: "Ovaj uređaj nije povezan s nijednim CT pristupnim terminalom!"
+  gone: "CT pristupni terminal s kojim je ovaj uređaj bio povezan više ne postoji!"
+  no-energy: "Ostao si bez energije!"
+  out-of-range: "Izvan dometa si!"
+  no-permission: "Nije ti dopušteno koristiti ovaj terminal na tom području!"

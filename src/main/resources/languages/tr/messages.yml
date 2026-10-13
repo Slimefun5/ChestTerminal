@@ -1,0 +1,8 @@
+terminal:
+  failed: "Başarısız"
+  link-established: "Bağlantı kuruldu!"
+  not-linked: "Bu aygıt hiçbir CT Erişim Terminaline bağlanmamış!"
+  gone: "Bu aygıtın bağlı olduğu CT Erişim Terminali artık yok!"
+  no-energy: "Enerjin bitti!"
+  out-of-range: "Menzil dışındasın!"
+  no-permission: "O bölgede bu terminali kullanma iznin yok!"

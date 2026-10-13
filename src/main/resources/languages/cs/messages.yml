@@ -1,0 +1,8 @@
+terminal:
+  failed: "Nepovedlo se"
+  link-established: "Spojení navázáno!"
+  not-linked: "Toto zařízení není spojeno s žádným CT přístupovým terminálem!"
+  gone: "CT přístupový terminál, se kterým bylo toto zařízení spojeno, už neexistuje!"
+  no-energy: "Nemáš žádnou energii!"
+  out-of-range: "Jsi příliš daleko!"
+  no-permission: "V této oblasti nemáš oprávnění použít tento terminál!"

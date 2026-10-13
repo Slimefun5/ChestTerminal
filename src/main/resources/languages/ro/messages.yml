@@ -1,0 +1,8 @@
+terminal:
+  failed: "A eșuat"
+  link-established: "Legătura a fost stabilită!"
+  not-linked: "Acest dispozitiv nu este legat de niciun Terminal de Acces CT!"
+  gone: "Terminalul de Acces CT de care era legat acest dispozitiv nu mai există!"
+  no-energy: "Ai rămas fără energie!"
+  out-of-range: "Ești în afara razei de acțiune!"
+  no-permission: "Nu ai permisiunea să folosești acest terminal în acea zonă!"

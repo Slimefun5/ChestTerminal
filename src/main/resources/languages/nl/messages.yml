@@ -1,0 +1,8 @@
+terminal:
+  failed: "Mislukt"
+  link-established: "Verbinding gemaakt!"
+  not-linked: "Dit apparaat is niet gekoppeld aan een CT Toegangsterminal!"
+  gone: "De CT Toegangsterminal waaraan dit apparaat gekoppeld was, bestaat niet meer!"
+  no-energy: "Je energie is op!"
+  out-of-range: "Je bent buiten bereik!"
+  no-permission: "Je mag deze terminal in dat gebied niet gebruiken!"

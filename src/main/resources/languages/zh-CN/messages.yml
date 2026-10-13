@@ -1,0 +1,8 @@
+terminal:
+  failed: "失败"
+  link-established: "连接已建立！"
+  not-linked: "该设备尚未连接到任何 CT 访问终端！"
+  gone: "该设备所连接的 CT 访问终端已不存在！"
+  no-energy: "你的能量已耗尽！"
+  out-of-range: "你已超出范围！"
+  no-permission: "你无权在该区域使用此终端！"

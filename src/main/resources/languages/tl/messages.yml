@@ -1,0 +1,8 @@
+terminal:
+  failed: "Nabigo"
+  link-established: "Naitatag ang ugnayan!"
+  not-linked: "Hindi pa naiuugnay ang kasangkapang ito sa anumang CT Terminal ng Akses!"
+  gone: "Wala na ang CT Terminal ng Akses na pinagkabitan ng kasangkapang ito!"
+  no-energy: "Naubusan ka ng enerhiya!"
+  out-of-range: "Wala ka sa saklaw!"
+  no-permission: "Hindi ka pinapayagang gamitin ang terminal na ito sa lugar na iyon!"

@@ -1,0 +1,8 @@
+terminal:
+  failed: "Thất bại"
+  link-established: "Đã thiết lập liên kết!"
+  not-linked: "Thiết bị này chưa được liên kết với Trạm Truy cập CT nào!"
+  gone: "Trạm Truy cập CT mà thiết bị này liên kết tới không còn tồn tại!"
+  no-energy: "Bạn đã hết năng lượng!"
+  out-of-range: "Bạn ở ngoài tầm với!"
+  no-permission: "Bạn không được phép dùng trạm này trong khu vực đó!"
